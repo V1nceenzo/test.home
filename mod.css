@@ -107,6 +107,6 @@ td a:hover {
     color: white;
 }
 
-.dark-mode a {
+.dark-mode td a {
     color: #ffcc00;
 }
