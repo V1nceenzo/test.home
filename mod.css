@@ -10,7 +10,7 @@ body {
 /* Navbar */
 nav {
     background-color: #4CAF50; /* Ubah navbar jadi hijau */
-    padding: 15px;
+    padding: 10px 20px;  /* Sesuaikan padding dengan home.css */
     display: flex;
     justify-content: space-between;
     align-items: center;
