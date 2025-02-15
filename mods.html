@@ -69,12 +69,20 @@
     </div>
 
     <script>
+        document.getElementById("searchBar").addEventListener("keyup", function(event) {
+            if (event.key === "Enter") {
+                alert("Pencarian untuk: " + this.value);
+            }
+
+        
         document.addEventListener("DOMContentLoaded", function () {
             const darkModeToggle = document.getElementById("darkModeToggle");
             const body = document.body;
 
             if (localStorage.getItem("darkMode") === "enabled") {
                 body.classList.add("dark-mode");
+            } else {
+                darkModeToggle.textContent = "🌙";
             }
 
             darkModeToggle.addEventListener("click", function () {
@@ -88,6 +96,7 @@
             });
         });
     </script>
-
+    
+    
 </body>
 </html>
