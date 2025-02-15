@@ -101,10 +101,9 @@ nav ul li a:hover {
 #darkModeToggle {
     background: none;
     border: none;
-    font-size: 30px;
+    font-size: 30px;  /* Memperbesar ukuran emoji toggle dark mode */
     cursor: pointer;
     color: white;
-    margin-right: 10px; /* Menambahkan margin kanan untuk menggeser ke kiri */
 }
 
 .dark-mode {
