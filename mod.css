@@ -37,7 +37,7 @@ nav ul li a:hover {
     color: #f4b400;
 }
 
-/* Profile navabr */
+/* Profile navbar */
 
 .profile-container {
     display: flex;
@@ -92,6 +92,11 @@ nav ul li a:hover {
     cursor: pointer;
     color: white;
 }
+
+
+
+
+
 
 /* Mods List Section */
 h1 {
