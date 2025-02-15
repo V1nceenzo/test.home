@@ -107,10 +107,6 @@ nav ul li a:hover {
     margin-right: 10px; /* Menambahkan margin kanan untuk menggeser ke kiri */
 }
 
-body.dark-mode {
-    background-color: #121212;
-    color: white;
-}
 
 /* Video Section */
 .video-list {
