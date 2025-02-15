@@ -1,4 +1,4 @@
-/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +14,7 @@ body {
     color: #333;
     overflow-y: auto;  /* Menambahkan aturan ini */
 }
+
 
 /* Navbar */
 nav {
@@ -48,19 +49,17 @@ nav ul li a:hover {
 }
 
 /* Profile navbar */
+
 .profile-container {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Membuat profile dan toggle berada di kanan */
 }
 
-/* Profile image - sedikit dipindah ke kanan */
 .channel-profile {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     overflow: hidden;
-    margin-left: 10px; /* Menambahkan margin kiri untuk menggeser ke kanan */
 }
 
 .profile-img {
@@ -90,6 +89,7 @@ nav ul li a:hover {
 }
 
 /*searchBar */
+/* Search Bar */
 #searchBar {
     padding: 10px;  /* Menambah padding agar lebih besar */
     border-radius: 5px;
@@ -97,7 +97,7 @@ nav ul li a:hover {
     font-size: 18px;  /* Menambah ukuran font search bar */
 }
 
-/*dark mode*/
+
 #darkModeToggle {
     background: none;
     border: none;
@@ -106,72 +106,73 @@ nav ul li a:hover {
     color: white;
 }
 
+
+
+
+
+
+/* Mods List Section */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #4CAF50; /* Ubah teks Mods List jadi hijau */
+}
+
+/* Table Styles */
+.table-container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #4CAF50;
+    color: white;
+}
+
+td a {
+    /*color: #007BFF;*/
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
 /* Dark Mode */
 .dark-mode {
-    background-color: #222 !important;
-    color: white !important;
-}
-
-.dark-mode nav {
-    background-color: #333 !important;
-}
-
-.dark-mode .profile-container, .dark-mode .horizontal-menu, .dark-mode #searchBar {
-    background-color: #444 !important;
-    color: white !important;
-}
-
-.dark-mode .horizontal-menu a {
-    color: white !important;
-}
-
-.dark-mode #darkModeToggle {
-    background-color: #555 !important;
-    color: white !important;
-}
-
-.dark-mode .video-card {
-    background-color: #333 !important;
-    color: white !important;
-}
-
-.dark-mode footer {
-    background-color: #333 !important;
-    color: white !important;
-}
-
-.dark-mode input, .dark-mode button {
-    background-color: #444 !important;
-    color: white !important;
-}
-
-
-
-/* Video Section */
-.video-list {
-    display: flex;
-    overflow-x: auto;
-    gap: 15px;
-    padding: 20px;
-    white-space: nowrap;
-}
-
-.video-card {
-    flex: 0 0 auto;
-    width: 360px;
-    text-align: center;
-}
-
-.video-card iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-}
-
-/* Footer Section */
-footer {
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #4CAF50;
+    background-color: #222;
     color: white;
+}
+
+.dark-mode .table-container {
+    background: #333;
+    box-shadow: none;
+}
+
+
+.dark-mode td {
+    color: white;
+}
+
+.dark-mode td a {
+    color: #ffcc00;
 }
