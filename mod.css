@@ -51,6 +51,12 @@ h1 {
     margin: 20px 0;
     font-size: 28px;
     color: #444;
+    transition: color 0.3s ease;
+}
+
+.dark-mode h1 {
+    color: white; /* Warna putih saat dark mode aktif */
+}
 }
 
 /* Table Styles */
@@ -102,7 +108,7 @@ td a:hover {
 }
 
 .dark-mode th {
-    background: #444;
+    background: #4CAF50; /* Tetap hijau saat dark mode */
 }
 
 .dark-mode td {
