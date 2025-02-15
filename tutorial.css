@@ -1,4 +1,4 @@
-/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -53,16 +53,13 @@ nav ul li a:hover {
 .profile-container {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Membuat profile dan toggle berada di kanan */
 }
 
-/* Profile image - sedikit dipindah ke kanan */
 .channel-profile {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     overflow: hidden;
-    margin-left: 10px; /* Menambahkan margin kiri untuk menggeser ke kanan */
 }
 
 .profile-img {
@@ -92,6 +89,7 @@ nav ul li a:hover {
 }
 
 /*searchBar */
+/* Search Bar */
 #searchBar {
     padding: 10px;  /* Menambah padding agar lebih besar */
     border-radius: 5px;
@@ -100,14 +98,12 @@ nav ul li a:hover {
 }
 
 
-
 #darkModeToggle {
     background: none;
     border: none;
-    font-size: 30px;
+    font-size: 30px;  /* Memperbesar ukuran emoji toggle dark mode */
     cursor: pointer;
     color: white;
-    margin-right: 10px; /* Menambahkan margin kanan untuk menggeser ke kiri */
 }
 
 
@@ -136,10 +132,22 @@ nav ul li a:hover {
     aspect-ratio: 16 / 9;
 }
 
-/* Footer Section */
-footer {
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #4CAF50;
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
     color: white;
+}
+
+.dark-mode .table-container {
+    background: #333;
+    box-shadow: none;
+}
+
+
+.dark-mode td {
+    color: white;
+}
+
+.dark-mode td a {
+    color: #ffcc00;
 }
