@@ -3,62 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video List</title>
+    <title>Home | Channel YouTube</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        .video-container {
+        .video-list {
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 20px;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 20px;
+            white-space: nowrap;
         }
-        .video {
-            position: relative;
-            width: 320px;
-            cursor: pointer;
-        }
-        .video img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .play-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60px;
-            height: 42px;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_circle_(2017).svg') no-repeat center;
-            background-size: contain;
-            opacity: 0.8;
+        .video-card {
+            flex: 0 0 auto;
+            width: 300px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <div class="logo">My Channel</div>
+        <ul class="horizontal-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mods.html">Mods</a></li>
+            <li><a href="https://www.youtube.com/@V1ncenzo-csn" target="_blank">Tutorial</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <input type="text" id="searchBar" placeholder="Search...">
+        <button id="darkModeToggle">🌙</button>
+    </nav>
+    
+    <header class="hero">
+        <h1>Made to Be Played</h1>
+        <p>The Very Best in Gaming Content</p>
+        <div class="buttons">
+            <a href="https://play.google.com" class="btn">Google Play</a>
+            <a href="https://www.apple.com/app-store/" class="btn">App Store</a>
+        </div>
+    </header>
+    
+    <section class="content-grid">
+        <div class="video-list">
+            <div class="video-card">
+                <iframe width="280" height="157" src="https://www.youtube.com/embed/Btx9KtedHAk" frameborder="0" allowfullscreen></iframe>
+                <h3>Video 1</h3>
+            </div>
+            <div class="video-card">
+                <iframe width="280" height="157" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <h3>Video 2</h3>
+            </div>
+            <div class="video-card">
+                <iframe width="280" height="157" src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allowfullscreen></iframe>
+                <h3>Video 3</h3>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 My Channel | Follow untuk update terbaru</p>
+    </footer>
+    
+    <script>
+        document.getElementById("searchBar").addEventListener("keyup", function(event) {
+            if (event.key === "Enter") {
+                alert("Pencarian untuk: " + this.value);
+            }
+        });
 
-<h2>Video List</h2>
-<div class="video-container">
-    <div class="video" data-id="Btx9KtedHAk" onclick="loadVideo(this)">
-        <img src="https://img.youtube.com/vi/Btx9KtedHAk/hqdefault.jpg" alt="Video Thumbnail">
-        <div class="play-button"></div>
-    </div>
-    <div class="video" data-id="dQw4w9WgXcQ" onclick="loadVideo(this)">
-        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Video Thumbnail">
-        <div class="play-button"></div>
-    </div>
-</div>
-
-<script>
-    function loadVideo(element) {
-        const videoId = element.getAttribute("data-id");
-        element.innerHTML = `<iframe width="320" height="180" src="https://www.youtube.com/embed/${videoId}?autoplay=1" frameborder="0" allowfullscreen></iframe>`;
-    }
-</script>
-
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        darkModeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                darkModeToggle.textContent = "☀️";
+            } else {
+                darkModeToggle.textContent = "🌙";
+            }
+        });
+    </script>
 </body>
 </html>
