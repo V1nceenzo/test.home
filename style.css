@@ -62,7 +62,7 @@ nav ul li a:hover {
     height: 50px;
     border-radius: 50%;
     overflow: hidden;
-    margin-left: 40px; /* Menambahkan margin kiri untuk menggeser ke kanan */
+    margin-left: 10px; /* Menambahkan margin kiri untuk menggeser ke kanan */
 }
 
 .profile-img {
@@ -107,7 +107,7 @@ nav ul li a:hover {
     font-size: 30px;
     cursor: pointer;
     color: white;
-    margin-right: 40px; /* Menambahkan margin kanan untuk menggeser ke kiri */
+    margin-right: 10px; /* Menambahkan margin kanan untuk menggeser ke kiri */
 }
 
 
