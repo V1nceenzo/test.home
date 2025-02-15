@@ -61,7 +61,7 @@ h1 {
 
 /* Table Styles */
 .table-container {
-    width: 80%;
+    max-width: 900px; /* Batas lebar maksimal */
     margin: auto;
     background: white;
     padding: 20px;
