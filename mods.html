@@ -76,7 +76,9 @@
             // Mengecek apakah dark mode sebelumnya sudah diaktifkan
             if (localStorage.getItem("darkMode") === "enabled") {
                 body.classList.add("dark-mode");
-                darkModeToggle.textContent = "🌙";  // Menampilkan emoji bulan untuk dark mode
+                darkModeToggle.textContent = "☀️";  // Ikon matahari untuk white mode
+            } else {
+                darkModeToggle.textContent = "🌙";  // Ikon bulan untuk dark mode
             }
         
             // Menambahkan event listener untuk toggle dark mode
@@ -86,13 +88,14 @@
                 // Menyimpan status dark mode di localStorage
                 if (body.classList.contains("dark-mode")) {
                     localStorage.setItem("darkMode", "enabled");
-                    darkModeToggle.textContent = "🌙";  // Emoji bulan untuk dark mode
+                    darkModeToggle.textContent = "☀️";  // Ikon matahari untuk white mode
                 } else {
                     localStorage.setItem("darkMode", "disabled");
-                    darkModeToggle.textContent = "☀️";  // Emoji matahari untuk white mode
+                    darkModeToggle.textContent = "🌙";  // Ikon bulan untuk dark mode
                 }
             });
         });
+        
 
     </script>
     
