@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mods.html">Mods</a></li>
+            <li><a href="https://www.youtube.com/@V1ncenzo-csn" target="_blank">Tutorial</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <button id="darkModeToggle">🌙</button>
+    </nav>
+
+    <!-- Judul Halaman -->
+    <h1>Mods List</h1>
+
+    <!-- Tabel List Mods -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>List Game</th>
+                    <th>Installation Guide</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Genshin Impact 5.4 Cheat</td>
+                    <td><a href="https://youtu.be/Btx9KtedHAk" target="_blank">Watch Video</a></td>
+                    <td><a href="https://shrinkme.ink/C7QUTWs" target="_blank">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Honkai Star Rail 3.0 Cheat</td>
+                    <td><a href="https://youtu.be/hDfMh85DDYM" target="_blank">Watch Video</a></td>
+                    <td><a href="https://sfl.gl/yTzWbk" target="_blank">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Wuthering Waves 2.0 Cheat</td>
+                    <td><a href="https://youtu.be/jUN2RzhtmPs" target="_blank">Watch Video</a></td>
+                    <td><a href="https://sfl.gl/BXgIyfu7" target="_blank">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Zenless Zone Zero 1.5 Cheat</td>
+                    <td><a href="https://youtu.be/Nz6L3_3j-70" target="_blank">Watch Video</a></td>
+                    <td><a href="https://sfl.gl/KCZR" target="_blank">Download</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const darkModeToggle = document.getElementById("darkModeToggle");
+            const body = document.body;
+
+            if (localStorage.getItem("darkMode") === "enabled") {
+                body.classList.add("dark-mode");
+            }
+
+            darkModeToggle.addEventListener("click", function () {
+                body.classList.toggle("dark-mode");
+
+                if (body.classList.contains("dark-mode")) {
+                    localStorage.setItem("darkMode", "enabled");
+                } else {
+                    localStorage.setItem("darkMode", "disabled");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
