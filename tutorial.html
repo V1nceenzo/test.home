@@ -78,7 +78,7 @@
             // Menambahkan event listener untuk toggle dark mode
             darkModeToggle.addEventListener("click", function () {
                 body.classList.toggle("dark-mode");
-        
+            
                 // Menyimpan status dark mode di localStorage
                 if (body.classList.contains("dark-mode")) {
                     localStorage.setItem("darkMode", "enabled");
@@ -87,7 +87,10 @@
                     localStorage.setItem("darkMode", "disabled");
                     darkModeToggle.textContent = "🌙";  // Ikon bulan untuk dark mode
                 }
+            
+                console.log(localStorage.getItem("darkMode"));  // Cek status di localStorage
             });
+
         });
     </script>
 </body>
