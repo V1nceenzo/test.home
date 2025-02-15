@@ -61,34 +61,33 @@
             if (event.key === "Enter") {
                 alert("Pencarian untuk: " + this.value);
             }
-        });
         
-        document.addEventListener("DOMContentLoaded", function () {
-            const darkModeToggle = document.getElementById("darkModeToggle");
+        document.addEventListener("DOMContentLoaded", function() {
             const body = document.body;
+            const darkModeToggle = document.getElementById("darkModeToggle");
         
-            // Mengecek apakah dark mode sebelumnya sudah diaktifkan
+            // Mengecek status dark mode yang tersimpan di localStorage
             if (localStorage.getItem("darkMode") === "enabled") {
                 body.classList.add("dark-mode");
-                darkModeToggle.textContent = "☀️";  // Ikon matahari untuk white mode
+                darkModeToggle.textContent = "☀️"; // Ikon matahari
             } else {
-                darkModeToggle.textContent = "🌙";  // Ikon bulan untuk dark mode
+                body.classList.remove("dark-mode");
+                darkModeToggle.textContent = "🌙"; // Ikon bulan
             }
         
-            // Menambahkan event listener untuk toggle dark mode
-            darkModeToggle.addEventListener("click", function () {
+            // Event listener untuk toggle dark mode
+            darkModeToggle.addEventListener("click", function() {
                 body.classList.toggle("dark-mode");
-            
-                // Menyimpan status dark mode di localStorage
+        
                 if (body.classList.contains("dark-mode")) {
                     localStorage.setItem("darkMode", "enabled");
-                    darkModeToggle.textContent = "☀️";  // Ikon matahari untuk white mode
+                    darkModeToggle.textContent = "☀️";  // Ikon matahari
                 } else {
                     localStorage.setItem("darkMode", "disabled");
-                    darkModeToggle.textContent = "🌙";  // Ikon bulan untuk dark mode
+                    darkModeToggle.textContent = "🌙";  // Ikon bulan
                 }
-            
-                console.log(localStorage.getItem("darkMode"));  // Cek status di localStorage
+        
+                console.log(localStorage.getItem("darkMode"));
             });
 
         });
