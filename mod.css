@@ -1,39 +1,118 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
 /* Navbar Styling (Sama seperti Home) */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #4CAF50; /* Warna hijau yang sama */
+    background-color: #4CAF50; /* Warna hijau Home */
     padding: 10px 20px;
 }
 
-nav ul {
-    list-style: none;
+.profile-container {
     display: flex;
-    padding: 0;
-    margin: 0;
+    align-items: center;
 }
 
-nav ul li {
+.channel-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.horizontal-menu {
+    display: flex;
+    list-style: none;
+}
+
+.horizontal-menu li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.horizontal-menu a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
+.horizontal-menu a:hover {
     color: yellow;
 }
 
-/* Tombol Mode Gelap */
+#searchBar {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 #darkModeToggle {
     background: none;
     border: none;
     font-size: 20px;
     cursor: pointer;
+    color: white;
+}
+
+/* Mods Table Styling */
+.table-container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.mods-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.mods-table th, .mods-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mods-table th {
+    background: #4CAF50;
+    color: white;
+}
+
+.mods-table a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mods-table a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #4CAF50;
     color: white;
 }
