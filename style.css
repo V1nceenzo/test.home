@@ -389,3 +389,38 @@ th, td {
 
 
 
+
+        .video-list {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 20px;
+            white-space: nowrap;
+        }
+        .video-card {
+            flex: 0 0 auto;
+            width: 360px;
+            text-align: center;
+        }
+        .video-card iframe {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+        .channel-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile-img {
+            aspect-ratio: 1 / 1;
+        }
+
+        .channel-profile a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+
+
