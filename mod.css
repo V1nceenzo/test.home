@@ -2,14 +2,14 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0 20px; /* Menambahkan padding di kiri dan kanan */
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
 
 /* Navbar */
 nav {
-    background-color: #4CAF50; /* Warna hijau sama dengan Home */
+    background-color: #222;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -51,21 +51,12 @@ h1 {
     margin: 20px 0;
     font-size: 28px;
     color: #444;
-    transition: color 0.3s ease;
-}
-
-.dark-mode h1 {
-    color: white; /* Warna putih saat dark mode aktif */
-}
 }
 
 /* Table Styles */
-/* Tabel dalam container */
-/* Tabel dalam container */
 .table-container {
-    width: 100%; /* Membuat container memenuhi lebar layar */
-    max-width: 900px; /* Batas maksimal lebar */
-    margin: 20px auto; /* Memberi jarak di atas dan bawah, dan menempatkan container di tengah */
+    width: 80%;
+    margin: auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -73,29 +64,22 @@ h1 {
     overflow-x: auto;
 }
 
-/* Tabel */
 table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
-    table-layout: fixed; /* Menetapkan lebar kolom */
 }
 
-/* Seluruh elemen dalam tabel */
 th, td {
     padding: 12px;
     border-bottom: 1px solid #ddd;
-    text-overflow: ellipsis; /* Menambahkan elipsis jika konten terlalu panjang */
-    overflow: hidden; /* Menyembunyikan teks yang meluap */
 }
 
-/* Bagian header tabel */
 th {
-    background: #4CAF50; /* Warna hijau navbar */
+    background: #333;
     color: white;
 }
 
-/* Link dalam tabel */
 td a {
     color: #007BFF;
     text-decoration: none;
@@ -105,19 +89,6 @@ td a {
 td a:hover {
     text-decoration: underline;
 }
-
-@media (max-width: 768px) {
-    .table-container {
-        width: 100%; /* Memastikan tabel memenuhi lebar layar di perangkat kecil */
-        padding: 10px; /* Mengurangi padding agar tidak terlalu padat */
-    }
-
-    th, td {
-        padding: 10px; /* Mengurangi padding untuk kolom di perangkat kecil */
-    }
-}
-
-
 
 /* Dark Mode */
 .dark-mode {
@@ -131,7 +102,7 @@ td a:hover {
 }
 
 .dark-mode th {
-    background: #4CAF50; /* Tetap hijau saat dark mode */
+    background: #444;
 }
 
 .dark-mode td {
