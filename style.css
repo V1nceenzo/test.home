@@ -53,6 +53,8 @@ nav ul li a:hover {
 .profile-container {
     display: flex;
     align-items: center;
+    justify-content: flex-end; /* Membuat profile dan toggle berada di kanan */
+    gap: 20px; /* Menambahkan jarak antara profile image dan icon toggle */
 }
 
 /* Profile image - sedikit dipindah ke kanan */
@@ -61,7 +63,6 @@ nav ul li a:hover {
     height: 50px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 15px;  /* Memberi jarak lebih ke kanan */
 }
 
 .profile-img {
@@ -103,11 +104,10 @@ nav ul li a:hover {
 #darkModeToggle {
     background: none;
     border: none;
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     color: white;
-    margin-left: 15px;  /* Memberi jarak lebih ke kiri */
-}}
+}
 
 
 
