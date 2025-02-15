@@ -1,4 +1,10 @@
 /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -6,7 +12,9 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    overflow-y: auto;  /* Menambahkan aturan ini */
 }
+
 
 /* Navbar */
 nav {
