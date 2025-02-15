@@ -67,7 +67,8 @@ h1 {
 table {
     width: 100%;
     border-collapse: collapse;
-    text-align: left;
+    text-align: center;
+    color: #4CAF50;
 }
 
 th, td {
