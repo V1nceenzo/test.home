@@ -60,6 +60,7 @@ h1 {
 }
 
 /* Table Styles */
+/* Tabel dalam container */
 .table-container {
     max-width: 900px; /* Batas lebar maksimal */
     margin: auto;
@@ -70,15 +71,19 @@ h1 {
     overflow-x: auto;
 }
 
+/* Tabel */
 table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
+    table-layout: fixed; /* Menetapkan lebar kolom */
 }
 
 th, td {
     padding: 12px;
     border-bottom: 1px solid #ddd;
+    text-overflow: ellipsis; /* Menambahkan elipsis jika konten terlalu panjang */
+    overflow: hidden; /* Menyembunyikan teks yang meluap */
 }
 
 th {
