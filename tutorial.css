@@ -89,7 +89,6 @@ nav ul li a:hover {
 }
 
 /*searchBar */
-/* Search Bar */
 #searchBar {
     padding: 10px;  /* Menambah padding agar lebih besar */
     border-radius: 5px;
@@ -97,7 +96,7 @@ nav ul li a:hover {
     font-size: 18px;  /* Menambah ukuran font search bar */
 }
 
-
+/* Dark Mode */
 #darkModeToggle {
     background: none;
     border: none;
@@ -107,6 +106,10 @@ nav ul li a:hover {
 }
 
 
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
 
 
 
@@ -132,10 +135,6 @@ nav ul li a:hover {
     aspect-ratio: 16 / 9;
 }
 
-/* Dark Mode */
-.dark-mode {
-    background-color: #222;
-    color: white;
-}
+
 
 
