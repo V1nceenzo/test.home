@@ -143,19 +143,3 @@ nav ul li a:hover {
     box-shadow: none;
 }
 
-
-.dark-mode td {
-    color: white;
-}
-
-.dark-mode td a {
-    color: #ffcc00;
-}
-
-/* Footer Section */
-footer {
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-}
