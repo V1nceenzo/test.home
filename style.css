@@ -42,7 +42,7 @@ nav ul li a {
     font-weight: bold;
     font-size: 22px;  /* Menambah ukuran font navbar sekitar 50% */
     transition: color 0.3s;
-}}
+}
 
 nav ul li a:hover {
     color: #f4b400;
