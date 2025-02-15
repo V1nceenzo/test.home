@@ -423,12 +423,10 @@ th, td {
     object-fit: cover;
     position: relative;
     transform: scale(2); /* Membesarkan gambar */
-    display: block; /* Pastikan tetap muncul */
+    display: block;
+    max-width: 100%; /* Pastikan tidak melebihi ukuran aslinya */
+    aspect-ratio: 1 / 1; /* Jaga agar tetap bulat tanpa gepeng */
 }
-
-
-
-
 
 
 
