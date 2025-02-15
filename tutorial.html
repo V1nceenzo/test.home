@@ -1,33 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial</title>
-    <link rel="stylesheet" href="tutorial.css">
-    <style>
-        .video-list {
-            display: flex;
-            overflow-x: auto;
-            gap: 15px;
-            padding: 20px;
-            white-space: nowrap;
-        }
-        .video-card {
-            flex: 0 0 auto;
-            width: 360px;
-            text-align: center;
-        }
-        .video-card iframe {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 16 / 9;
-        }
-    </style>
+    <title>Home | Channel YouTube</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <div class="logo">My Channel</div>
+        <div class="profile-container">
+            <div class="channel-profile">
+                <a href="https://www.youtube.com/@V1ncenzo-csn?sub_confirmation=1" target="_blank">
+                    <img class="profile-img" src="https://yt3.googleusercontent.com/w-_LAzTXPsYUlSs9ngpI2WZ5eQjaObr8OqwibwTZLajPMXIWHS8BV_XiuI-zdVGoFn7a0quULXE=s160-c-k-c0x00ffffff-no-rj" alt="Profil Channel">
+                </a>
+            </div>
+        </div>
+        
         <ul class="horizontal-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="mods.html">Mods</a></li>
@@ -74,16 +63,32 @@
                 alert("Pencarian untuk: " + this.value);
             }
         });
-
-        const darkModeToggle = document.getElementById("darkModeToggle");
-        darkModeToggle.addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
-            if (document.body.classList.contains("dark-mode")) {
-                darkModeToggle.textContent = "☀️";
-            } else {
-                darkModeToggle.textContent = "🌙";
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            const darkModeToggle = document.getElementById("darkModeToggle");
+            const body = document.body;
+        
+            // Mengecek apakah dark mode sebelumnya sudah diaktifkan
+            if (localStorage.getItem("darkMode") === "enabled") {
+                body.classList.add("dark-mode");
+                darkModeToggle.textContent = "🌙";  // Menampilkan emoji bulan untuk dark mode
             }
+        
+            darkModeToggle.addEventListener("click", function () {
+                body.classList.toggle("dark-mode");
+        
+                // Menyimpan status dark mode di localStorage
+                if (body.classList.contains("dark-mode")) {
+                    localStorage.setItem("darkMode", "enabled");
+                    darkModeToggle.textContent = "☀️";  // Emoji bulan untuk dark mode
+                } else {
+                    localStorage.setItem("darkMode", "disabled");
+                    darkModeToggle.textContent = "🌙";  // Emoji matahari untuk white mode
+                }
+            });
         });
+
     </script>
 </body>
 </html>
+
