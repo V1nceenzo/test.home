@@ -9,7 +9,7 @@ body {
 
 /* Navbar */
 nav {
-    background-color: #2c6b2f; /* Ganti warna navbar menjadi hijau */
+    background-color: #4CAF50; /* Ubah navbar jadi hijau */
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #7bd36c; /* Warna hover hijau muda */
+    color: #f4b400;
 }
 
 #darkModeToggle {
@@ -50,7 +50,7 @@ h1 {
     text-align: center;
     margin: 20px 0;
     font-size: 28px;
-    color: #4c8c4a; /* Warna judul hijau */
+    color: #4CAF50; /* Ubah teks Mods List jadi hijau */
 }
 
 /* Table Styles */
@@ -76,12 +76,12 @@ th, td {
 }
 
 th {
-    background: #2c6b2f; /* Hijau navbar untuk header tabel */
+    background: #333;
     color: white;
 }
 
 td a {
-    color: #4caf50; /* Warna link hijau */
+    color: #007BFF;
     text-decoration: none;
     font-weight: bold;
 }
@@ -92,17 +92,17 @@ td a:hover {
 
 /* Dark Mode */
 .dark-mode {
-    background-color: #2c6b2f; /* Gelap dengan hijau */
+    background-color: #222;
     color: white;
 }
 
 .dark-mode .table-container {
-    background: #3b7e4a; /* Gelap dengan hijau lebih tua */
+    background: #333;
     box-shadow: none;
 }
 
 .dark-mode th {
-    background: #4c8c4a; /* Hijau header tabel di mode gelap */
+    background: #444;
 }
 
 .dark-mode td {
@@ -110,5 +110,5 @@ td a:hover {
 }
 
 .dark-mode a {
-    color: #a5d6a7; /* Hijau terang pada link di mode gelap */
+    color: #ffcc00;
 }
