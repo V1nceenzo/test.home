@@ -411,8 +411,9 @@ th, td {
     display: flex;
     align-items: center;
     gap: 10px;
-    height: 40px; /* Tetapkan tinggi navbar tetap */
-    position: relative; /* Menjaga tata letak */
+    height: 40px; /* Pastikan navbar tetap 40px */
+    position: relative;
+    overflow: visible; /* Mencegah pemotongan gambar */
 }
 
 .profile-img {
