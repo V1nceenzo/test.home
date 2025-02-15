@@ -23,15 +23,34 @@
             height: auto;
             aspect-ratio: 16 / 9;
         }
+        .channel-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .channel-profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .channel-profile a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <nav>
-        <div class="logo">My Channel</div>
+        <div class="channel-profile">
+            <a href="https://www.youtube.com/channel/CHANNEL_ID_KAMU?sub_confirmation=1" target="_blank">
+                <img src="https://yt3.ggpht.com/ytc/AAUvwngh-placeholder.jpg" alt="Profil Channel">
+            </a>
+        </div>
         <ul class="horizontal-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="mods.html">Mods</a></li>
-            <li><a href="tutorial.html">Mods</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
             <li><a href="faq.html">FAQ</a></li>
         </ul>
         <input type="text" id="searchBar" placeholder="Search...">
