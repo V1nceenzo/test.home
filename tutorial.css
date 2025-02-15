@@ -106,28 +106,6 @@ nav ul li a:hover {
     color: white;
 }
 
-.dark-mode {
-    background-color: #222 !important;
-    color: white !important;
-}
-
-.dark-mode nav {
-    background-color: #333 !important;
-}
-
-.dark-mode .table-container {
-    background: #333 !important;
-    box-shadow: none !important;
-}
-
-.dark-mode td {
-    color: white !important;
-}
-
-.dark-mode td a {
-    color: #ffcc00 !important;
-}
-
 
 /* Video Section */
 .video-list {
