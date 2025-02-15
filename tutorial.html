@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Channel YouTube</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .video-list {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 20px;
+            white-space: nowrap;
+        }
+        .video-card {
+            flex: 0 0 auto;
+            width: 360px;
+            text-align: center;
+        }
+        .video-card iframe {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">My Channel</div>
+        <ul class="horizontal-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mods.html">Mods</a></li>
+            <li><a href="https://www.youtube.com/@V1ncenzo-csn" target="_blank">Tutorial</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <input type="text" id="searchBar" placeholder="Search...">
+        <button id="darkModeToggle">🌙</button>
+    </nav>
+    
+    <header class="hero">
+        <h1>Made to Be Played</h1>
+        <p>The Very Best in Gaming Content</p>
+        <div class="buttons">
+            <a href="https://play.google.com" class="btn">Google Play</a>
+            <a href="https://www.apple.com/app-store/" class="btn">App Store</a>
+        </div>
+    </header>
+    
+    <section class="content-grid">
+        <div class="video-list">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/Btx9KtedHAk" frameborder="0" allowfullscreen></iframe>
+                <h3>Video 1</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <h3>Video 2</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allowfullscreen></iframe>
+                <h3>Video 3</h3>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 My Channel | Follow untuk update terbaru</p>
+    </footer>
+    
+    <script>
+        document.getElementById("searchBar").addEventListener("keyup", function(event) {
+            if (event.key === "Enter") {
+                alert("Pencarian untuk: " + this.value);
+            }
+        });
+
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        darkModeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                darkModeToggle.textContent = "☀️";
+            } else {
+                darkModeToggle.textContent = "🌙";
+            }
+        });
+    </script>
+</body>
+</html>
