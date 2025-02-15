@@ -102,9 +102,6 @@ td a:hover {
     box-shadow: none;
 }
 
-.dark-mode th {
-    background: #444;
-}
 
 .dark-mode td {
     color: white;
