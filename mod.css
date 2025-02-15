@@ -1,21 +1,10 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Navbar */
-/* Navbar */
-/* Navbar */
+/* Navbar Styling (Sama seperti Home) */
 nav {
-    background-color: #2E8B57; /* Hijau yang sama seperti Home */
-    padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background-color: #4CAF50; /* Warna hijau yang sama */
+    padding: 10px 20px;
 }
 
 nav ul {
@@ -30,14 +19,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #A8E6A0; /* Warna hover lebih soft */
+    color: yellow;
 }
 
 /* Tombol Mode Gelap */
@@ -47,90 +36,4 @@ nav ul li a:hover {
     font-size: 20px;
     cursor: pointer;
     color: white;
-}
-
-/* Biar nggak numpuk di layar kecil */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-}
-
-
-/* Mods List Section */
-h1 {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 28px;
-    color: #444;
-}
-
-/* Table Styles */
-.table-container {
-    width: 80%;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-}
-
-th, td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-th {
-    background: #333;
-    color: white;
-}
-
-td a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-td a:hover {
-    text-decoration: underline;
-}
-
-/* Dark Mode */
-.dark-mode {
-    background-color: #222;
-    color: white;
-}
-
-.dark-mode .table-container {
-    background: #333;
-    box-shadow: none;
-}
-
-.dark-mode th {
-    background: #444;
-}
-
-.dark-mode td {
-    color: white;
-}
-
-.dark-mode a {
-    color: #ffcc00;
 }
