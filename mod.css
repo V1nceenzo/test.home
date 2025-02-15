@@ -9,13 +9,24 @@ body {
 
 /* Navbar */
 /* Navbar */
+/* Navbar */
 nav {
-    background-color: #228B22; /* Warna hijau */
-    padding: 15px;
+    background-color: #2E8B57; /* Hijau yang sama seperti Home */
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 4px solid #1e7e34; /* Sedikit efek tegas */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -26,15 +37,33 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #c0ffb3; /* Efek hover lebih soft */
+    color: #A8E6A0; /* Warna hover lebih soft */
 }
 
+/* Tombol Mode Gelap */
 #darkModeToggle {
     background: none;
     border: none;
     font-size: 20px;
     cursor: pointer;
     color: white;
+}
+
+/* Biar nggak numpuk di layar kecil */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
 }
 
 
