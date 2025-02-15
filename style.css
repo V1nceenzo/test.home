@@ -54,7 +54,6 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Membuat profile dan toggle berada di kanan */
-    gap: 20px; /* Menambahkan jarak antara profile image dan icon toggle */
 }
 
 /* Profile image - sedikit dipindah ke kanan */
