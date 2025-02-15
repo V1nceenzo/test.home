@@ -61,9 +61,11 @@ h1 {
 
 /* Table Styles */
 /* Tabel dalam container */
+/* Tabel dalam container */
 .table-container {
-    max-width: 900px; /* Batas lebar maksimal */
-    margin: auto;
+    width: 100%; /* Membuat container memenuhi lebar layar */
+    max-width: 900px; /* Batas maksimal lebar */
+    margin: 20px auto; /* Memberi jarak di atas dan bawah, dan menempatkan container di tengah */
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -79,6 +81,7 @@ table {
     table-layout: fixed; /* Menetapkan lebar kolom */
 }
 
+/* Seluruh elemen dalam tabel */
 th, td {
     padding: 12px;
     border-bottom: 1px solid #ddd;
@@ -86,11 +89,13 @@ th, td {
     overflow: hidden; /* Menyembunyikan teks yang meluap */
 }
 
+/* Bagian header tabel */
 th {
     background: #4CAF50; /* Warna hijau navbar */
     color: white;
 }
 
+/* Link dalam tabel */
 td a {
     color: #007BFF;
     text-decoration: none;
@@ -100,6 +105,7 @@ td a {
 td a:hover {
     text-decoration: underline;
 }
+
 
 /* Dark Mode */
 .dark-mode {
