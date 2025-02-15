@@ -111,50 +111,33 @@ nav ul li a:hover {
 
 
 
-/* Mods List Section */
-h1 {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 28px;
-    color: #4CAF50; /* Ubah teks Mods List jadi hijau */
-}
-
-/* Table Styles */
-.table-container {
-    width: 80%;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Video Section */
+.video-list {
+    display: flex;
     overflow-x: auto;
+    gap: 15px;
+    padding: 20px;
+    white-space: nowrap;
 }
 
-table {
+.video-card {
+    flex: 0 0 auto;
+    width: 360px;
+    text-align: center;
+}
+
+.video-card iframe {
     width: 100%;
-    border-collapse: collapse;
-    text-align: left;
+    height: auto;
+    aspect-ratio: 16 / 9;
 }
 
-th, td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-th {
-    background: #4CAF50;
+/* Footer Section */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #4CAF50;
     color: white;
-}
-
-td a {
-    /*color: #007BFF;*/
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-td a:hover {
-    text-decoration: underline;
 }
 
 /* Dark Mode */
