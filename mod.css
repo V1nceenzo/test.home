@@ -18,7 +18,7 @@ body {
 /* Navbar */
 nav {
     background-color: #4CAF50; /* Ubah navbar jadi hijau */
-    padding: 10px 20px;  /* Sesuaikan padding dengan home.css */
+    padding: 10px 20px;  /* Sesuaikan padding untuk navbar */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +39,8 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 22px;  /* Menambah ukuran font navbar sekitar 50% */
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
@@ -86,17 +88,19 @@ nav ul li a:hover {
 }
 
 /*searchBar */
+/* Search Bar */
 #searchBar {
-    padding: 5px;
+    padding: 10px;  /* Menambah padding agar lebih besar */
     border-radius: 5px;
     border: 1px solid #ccc;
+    font-size: 18px;  /* Menambah ukuran font search bar */
 }
 
 
 #darkModeToggle {
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 30px;  /* Memperbesar ukuran emoji toggle dark mode */
     cursor: pointer;
     color: white;
 }
