@@ -423,9 +423,10 @@ th, td {
 
 
 .profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100px; /* Sesuaikan ukuran */
+    height: 100px; /* Pastikan aspek rasio tetap */
+    object-fit: cover; /* Hindari gambar gepeng */
+    border-radius: 50%; /* Buat gambar bulat */
 }
 
 
