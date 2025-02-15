@@ -407,6 +407,18 @@ th, td {
             height: auto;
             aspect-ratio: 16 / 9;
         }
+
+.profile-container {
+    width: 80px; /* Sesuaikan ukuran */
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden; /* Supaya gambar nggak keluar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .channel-profile {
     display: flex;
     align-items: center;
