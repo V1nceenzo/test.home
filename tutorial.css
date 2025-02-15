@@ -132,14 +132,6 @@ nav ul li a:hover {
     aspect-ratio: 16 / 9;
 }
 
-/* Footer Section */
-footer {
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-}
-
 /* Dark Mode */
 .dark-mode {
     background-color: #222;
