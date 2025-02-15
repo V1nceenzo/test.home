@@ -101,7 +101,7 @@ nav ul li a:hover {
 }
 
 
-
+/*dark mode*/
 #darkModeToggle {
     background: none;
     border: none;
@@ -111,7 +111,25 @@ nav ul li a:hover {
     margin-right: 10px; /* Menambahkan margin kanan untuk menggeser ke kiri */
 }
 
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
 
+.dark-mode .table-container {
+    background: #333;
+    box-shadow: none;
+}
+
+
+.dark-mode td {
+    color: white;
+}
+
+.dark-mode td a {
+    color: #ffcc00;
+}
 
 
 
