@@ -390,6 +390,7 @@ th, td {
 
 
 
+
         .video-list {
             display: flex;
             overflow-x: auto;
@@ -408,27 +409,18 @@ th, td {
             aspect-ratio: 16 / 9;
         }
 
-.profile-container {
-    width: 80px; /* Sesuaikan ukuran */
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden; /* Supaya gambar nggak keluar */
+.channel-profile {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-
-.profile-container {
-    width: 100px; /* Sesuaikan ukuran */
-    height: 100px;
+.channel-profile img {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    overflow: hidden; /* Supaya gambar nggak keluar */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #4CAF50; /* Warna background lingkaran */
+    margin-right: 10px;
 }
+
 
 .profile-img {
     width: 100%;
