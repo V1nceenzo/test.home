@@ -106,6 +106,46 @@ nav ul li a:hover {
     color: white;
 }
 
+/* Dark Mode */
+.dark-mode {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+.dark-mode nav {
+    background-color: #333 !important;
+}
+
+.dark-mode .profile-container, .dark-mode .horizontal-menu, .dark-mode #searchBar {
+    background-color: #444 !important;
+    color: white !important;
+}
+
+.dark-mode .horizontal-menu a {
+    color: white !important;
+}
+
+.dark-mode #darkModeToggle {
+    background-color: #555 !important;
+    color: white !important;
+}
+
+.dark-mode .video-card {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+.dark-mode footer {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+.dark-mode input, .dark-mode button {
+    background-color: #444 !important;
+    color: white !important;
+}
+
+
 
 /* Video Section */
 .video-list {
