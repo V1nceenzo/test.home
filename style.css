@@ -54,7 +54,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 20px;  /* Menambah jarak antara profile image dan dark mode toggle */
-    margin-left: auto; /* Memindahkan profile dan toggle ke kanan */
+    padding-right: 20px;  /* Menambah padding kanan agar tidak terlalu rapat dengan tepi */
 }
 
 .channel-profile {
