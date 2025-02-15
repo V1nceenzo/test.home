@@ -1,0 +1,59 @@
+/* Styling khusus untuk halaman Mods */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mods-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.mods-table th, .mods-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.mods-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.mods-table a {
+    color: blue;
+    text-decoration: none;
+}
+
+.mods-table a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
