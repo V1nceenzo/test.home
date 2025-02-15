@@ -12,11 +12,12 @@ body {
 }
 
 /* Navbar Styling (Sama seperti Home) */
+/* Navbar Styling */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #4CAF50; /* Warna hijau Home */
+    background-color: #4CAF50;
     padding: 10px 20px;
 }
 
@@ -26,8 +27,8 @@ nav {
 }
 
 .channel-profile {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -39,8 +40,10 @@ nav {
 }
 
 .horizontal-menu {
-    display: flex;
     list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .horizontal-menu li {
