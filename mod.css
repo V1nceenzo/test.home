@@ -1,59 +1,114 @@
-/* Styling khusus untuk halaman Mods */
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Navbar */
+nav {
+    background-color: #222;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h1 {
-    text-align: center;
-    font-size: 24px;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
     font-weight: bold;
 }
 
-.table-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+nav ul li a:hover {
+    color: #f4b400;
 }
 
-.mods-table {
+#darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Mods List Section */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #444;
+}
+
+/* Table Styles */
+.table-container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
 }
 
-.mods-table th, .mods-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
 }
 
-.mods-table th {
-    background-color: #4CAF50;
+th {
+    background: #333;
     color: white;
 }
 
-.mods-table a {
-    color: blue;
+td a {
+    color: #007BFF;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.mods-table a:hover {
+td a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .table-container {
+    background: #333;
+    box-shadow: none;
+}
+
+.dark-mode th {
+    background: #444;
+}
+
+.dark-mode td {
+    color: white;
+}
+
+.dark-mode a {
+    color: #ffcc00;
 }
