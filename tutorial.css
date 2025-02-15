@@ -151,3 +151,11 @@ nav ul li a:hover {
 .dark-mode td a {
     color: #ffcc00;
 }
+
+/* Footer Section */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
