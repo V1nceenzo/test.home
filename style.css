@@ -407,17 +407,23 @@ th, td {
             height: auto;
             aspect-ratio: 16 / 9;
         }
-        .channel-profile {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+.channel-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px; /* Tetapkan tinggi navbar tetap */
+    position: relative; /* Menjaga tata letak */
+}
+
 .profile-img {
-    aspect-ratio: 1 / 1;
-    max-width: 80px;
+    width: 80px;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
