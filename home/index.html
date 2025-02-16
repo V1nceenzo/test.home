@@ -30,6 +30,9 @@
         </div>
 
         <button id="darkModeToggle">🌙</button>
+
+        <button class="hamburger" id="hamburger">☰</button>
+
     </div>
 
 </nav>
@@ -149,6 +152,17 @@
                 }
             });
         });
+
+                // Hamburger
+                document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburger");
+            const navbarMenu = document.querySelector(".navbar-menu");
+        
+            hamburger.addEventListener("click", function () {
+                navbarMenu.classList.toggle("active");
+            });
+        });
+
 
     </script>
 </body>
