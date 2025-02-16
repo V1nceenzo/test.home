@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial</title>
-    <link rel="stylesheet" href="/test.home/home/home.css">
+    <link rel="stylesheet" href="tutorial.css">
 </head>
 <body>
 
@@ -34,9 +34,7 @@
 </nav>
 
 
-
-    <!-- isi halaman -->
-   <header class="hero">
+  <header class="hero">
         <h1>Made to Be Played</h1>
         <p>The Very Best in Gaming Content</p>
         <div class="buttons">
@@ -65,10 +63,10 @@
     <footer>
         <p>&copy; 2025 My Channel | Follow untuk update terbaru</p>
     </footer>
-
+    
     <script>
-
-                document.addEventListener("DOMContentLoaded", function () {
+        /*Funsgi search*/
+        document.addEventListener("DOMContentLoaded", function () {
             const searchBar = document.getElementById("searchBar");
             const searchButton = document.getElementById("searchButton");
         
@@ -89,12 +87,20 @@
                     alert("No results found for: " + query);
                 }
             }
-
-
         
+            searchButton.addEventListener("click", searchContent);
+            searchBar.addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                    searchContent();
+                }
+            });
+        });
+
+        /*Fungsi underline pada teks navbar*/
         document.addEventListener("DOMContentLoaded", function () {
             const links = document.querySelectorAll(".nav-link");
             let currentPage = window.location.pathname.split("/").pop();
+        
         
             // Kalau URL gak ada ekstensi .html, tambahin kemungkinan tanpa .html
             if (!currentPage.includes(".html")) {
@@ -110,6 +116,8 @@
         
 
         
+                
+        /*Funsgi dark mode*/
         document.addEventListener("DOMContentLoaded", function () {
             const darkModeToggle = document.getElementById("darkModeToggle");
             const body = document.body;
@@ -136,7 +144,6 @@
                 }
             });
         });
-        
 
     </script>
     
