@@ -48,6 +48,12 @@ nav ul li a:hover {
     color: #f4b400;
 }
 
+.nav-link.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
 /* Profile navbar */
 
 .profile-container {
