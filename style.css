@@ -59,7 +59,7 @@ nav ul li a:hover {
 .profile-container {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Membuat profile dan toggle berada di kanan */
+    gap: 10px; /* Jarak antara gambar dan nama */
 }
 
 /* Profile image - sedikit dipindah ke kanan */
@@ -69,6 +69,12 @@ nav ul li a:hover {
     border-radius: 50%;
     overflow: hidden;
     margin-left: 10px; /* Menambahkan margin kiri untuk menggeser ke kanan */
+}
+
+.channel-name {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .profile-img {
