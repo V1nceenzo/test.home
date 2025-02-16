@@ -203,6 +203,8 @@ footer {
     }
 }
 
+/* Styling lainnya */
+
 @media screen and (max-width: 768px) {
     /* Navbar */
     .navbar {
@@ -252,5 +254,32 @@ footer {
 
     .video-card {
         width: 50%;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        display: none;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Responsif untuk mobile */
+    .navbar-menu {
+        display: none; /* Menyembunyikan navbar menu di mobile */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Menampilkan navbar menu ketika hamburger diklik */
+    }
+
+    @media screen and (max-width: 768px) {
+        .hamburger {
+            display: block; /* Menampilkan tombol hamburger di mobile */
+        }
     }
 }
