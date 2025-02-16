@@ -76,14 +76,20 @@
 
         document.addEventListener("DOMContentLoaded", function () {
             const links = document.querySelectorAll(".nav-link");
-            const currentPage = window.location.pathname.split("/").pop();
+            let currentPage = window.location.pathname.split("/").pop();
+        
+            // Kalau URL gak ada ekstensi .html, tambahin kemungkinan tanpa .html
+            if (!currentPage.includes(".html")) {
+                currentPage += ".html";
+            }
         
             links.forEach(link => {
-                if (link.getAttribute("href") === currentPage) {
+                if (link.getAttribute("href") === currentPage || link.getAttribute("href") === window.location.pathname) {
                     link.classList.add("active");
                 }
             });
         });
+
 
 
         
