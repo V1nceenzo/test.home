@@ -79,7 +79,7 @@ body {
 .navbar-right {
     display: flex;
     align-items: center;
-    gap: 10px; /* Jarak antar elemen, termasuk search bar dan dark mode */
+    gap: 20px; /* Jarak antar elemen, termasuk search bar dan dark mode */
 }
 
 .search-bar {
