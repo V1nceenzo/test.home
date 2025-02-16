@@ -153,6 +153,60 @@ footer {
 }
 
 
+@media screen and (max-width: 1024px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;  /* Mengurangi padding untuk tablet */
+    }
+
+    .navbar-left {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+        align-items: center; /* Menjaga item tetap rapih di tengah */
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-left: 0;
+        margin-top: 10px;  /* Menambah jarak sedikit antara profile dan menu */
+    }
+
+    .navbar-right {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        align-items: center;  /* Menjaga elemen tetap di tengah */
+    }
+
+    /* Membuat tombol darkmode dan search bar lebih responsif */
+    #darkModeToggle, #searchButton {
+        margin-left: 0;
+        font-size: 28px;  /* Mengurangi ukuran font agar lebih pas */
+    }
+
+    .search-bar {
+        width: 80%; /* Membuat search bar lebih lebar pada tablet */
+        font-size: 14px;  /* Mengurangi ukuran font agar tidak kepotong */
+    }
+
+    /* Video Section */
+    .video-list {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .video-card {
+        width: 90%; /* Menyesuaikan lebar video agar tidak kepotong */
+        margin-bottom: 20px; /* Memberi jarak antara video */
+    }
+}
+
 @media screen and (max-width: 768px) {
     /* Navbar */
     .navbar {
@@ -164,6 +218,7 @@ footer {
         flex-direction: column;
         gap: 10px;
         margin-left: 0;
+        align-items: center; /* Rapi di tengah */
     }
 
     .navbar-menu {
@@ -171,12 +226,25 @@ footer {
         align-items: center;
         gap: 10px;
         margin-left: 0;
+        margin-top: 10px;
     }
 
     .navbar-right {
         flex-direction: column;
         gap: 10px;
         margin-top: 10px;
+        align-items: center; /* Menjaga elemen di tengah */
+    }
+
+    /* Membuat tombol darkmode dan search bar lebih responsif */
+    #darkModeToggle, #searchButton {
+        margin-left: 0;
+        font-size: 24px;  /* Menyesuaikan ukuran font pada mobile */
+    }
+
+    .search-bar {
+        width: 90%; /* Lebar search bar hampir penuh layar */
+        font-size: 14px; /* Ukuran font lebih kecil agar pas */
     }
 
     /* Video Section */
@@ -187,11 +255,6 @@ footer {
     }
 
     .video-card {
-        width: 90%; /* Menyesuaikan dengan layar */
-    }
-
-    /* Search Bar */
-    .search-bar {
-        width: 100%; /* Supaya lebih responsif */
+        width: 90%; /* Menyesuaikan lebar video agar pas */
     }
 }
