@@ -84,10 +84,12 @@ body {
     gap: 10px;
 }
 
-.search-bar {
-    padding: 5px 10px;
-    border: 1px solid #ddd;
+/*searchBar */
+#searchBar {
+    padding: 10px;  /* Menambah padding agar lebih besar */
     border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;  /* Menambah ukuran font search bar */
 }
 
 
