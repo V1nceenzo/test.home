@@ -1,1 +1,116 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Channel YouTube</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navbar-left">
+        <div class="profile">
+            <a href="https://www.youtube.com/@V1ncenzo-csn?sub_confirmation=1" target="_blank">
+                <img class="profile-img" src="https://yt3.googleusercontent.com/w-_LAzTXPsYUlSs9ngpI2WZ5eQjaObr8OqwibwTZLajPMXIWHS8BV_XiuI-zdVGoFn7a0quULXE=s160-c-k-c0x00ffffff-no-rj" alt="Profile Image">
+            </a>
+            <span class="profile-name">V1ncenzo</span>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="mods.html" class="nav-link">Mods</a></li>
+            <li><a href="tutorial.html" class="nav-link">Tutorial</a></li>
+            <li><a href="faq.html" class="nav-link">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="navbar-right">
+        <input type="text" class="search-bar" placeholder="Search...">
+        <button id="darkModeToggle">🌙</button>
+    </div>
+</nav>
+
+    
+    <header class="hero">
+        <h1>Made to Be Played</h1>
+        <p>The Very Best in Gaming Content</p>
+        <div class="buttons">
+            <a href="https://play.google.com" class="btn">Google Play</a>
+            <a href="https://www.apple.com/app-store/" class="btn">App Store</a>
+        </div>
+    </header>
+    
+    <section class="content-grid">
+        <div class="video-list">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/Btx9KtedHAk" frameborder="0" allowfullscreen></iframe>
+                <h3>Video 1</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <h3>Video 2</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allowfullscreen></iframe>
+                <h3>Video 3</h3>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 My Channel | Follow untuk update terbaru</p>
+    </footer>
+    
+    <script>
+        /*Funsgi search
+        document.getElementById("searchBar").addEventListener("keyup", function(event) {
+            if (event.key === "Enter") {
+                alert("Pencarian untuk: " + this.value);
+            }
+        });
+        */
+
+        /*Fungsi underline pada teks navbar*/
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll(".nav-link");
+            const currentPage = window.location.pathname.split("/").pop();
+        
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        });
+
+        
+                
+        /*Funsgi dark mode*/
+        document.addEventListener("DOMContentLoaded", function () {
+            const darkModeToggle = document.getElementById("darkModeToggle");
+            const body = document.body;
+        
+            // Mengecek apakah dark mode sebelumnya sudah diaktifkan
+            if (localStorage.getItem("darkMode") === "enabled") {
+                body.classList.add("dark-mode");
+                darkModeToggle.textContent = "☀️";  // Ikon matahari untuk white mode
+            } else {
+                darkModeToggle.textContent = "🌙";  // Ikon bulan untuk dark mode
+            }
+        
+            // Menambahkan event listener untuk toggle dark mode
+            darkModeToggle.addEventListener("click", function () {
+                body.classList.toggle("dark-mode");
+        
+                // Menyimpan status dark mode di localStorage
+                if (body.classList.contains("dark-mode")) {
+                    localStorage.setItem("darkMode", "enabled");
+                    darkModeToggle.textContent = "☀️";  // Ikon matahari untuk white mode
+                } else {
+                    localStorage.setItem("darkMode", "disabled");
+                    darkModeToggle.textContent = "🌙";  // Ikon bulan untuk dark mode
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
