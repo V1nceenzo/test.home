@@ -55,7 +55,7 @@ body {
 .navbar-menu {
     display: flex;
     list-style: none;
-    gap: 15px;
+    gap: 55px;
 }
 
 .nav-link {
@@ -81,7 +81,7 @@ body {
 .navbar-right {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
 }
 
 /*searchBar */
