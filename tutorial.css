@@ -75,6 +75,13 @@ body {
     color: #ffcc00;
 }
 
+/* Kanan: Search Bar & Dark Mode */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 
 /*searchBar */
 #searchBar {
