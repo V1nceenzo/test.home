@@ -1,4 +1,6 @@
 
+
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -55,14 +57,15 @@ body {
 .navbar-menu {
     display: flex;
     list-style: none;
-    gap: 15px;
+    gap: 40px;
+    margin-left: 100px; /* Dorong menu ke kanan */
 }
 
 .nav-link {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     transition: color 0.3s;
 }
 
@@ -71,36 +74,46 @@ body {
     font-weight: bold;
 }
 
+
 .nav-link:hover {
     color: #ffcc00;
 }
+
 
 /* Kanan: Search Bar & Dark Mode */
 .navbar-right {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
-
 
 /*searchBar */
-#searchBar {
-    padding: 10px;  /* Menambah padding agar lebih besar */
+.search-bar {
+    padding: 5px 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-size: 18px;  /* Menambah ukuran font search bar */
+    font-size: 16px;
+    width: 200px;
 }
+
+#searchButton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
 
 /* Dark Mode */
 #darkModeToggle {
     background: none;
     border: none;
-    font-size: 30px;  /* Memperbesar ukuran emoji toggle dark mode */
+    font-size: 30px;
     cursor: pointer;
     color: white;
-    margin-right: 10px
+    margin-left: 100px;
 }
-
 
 .dark-mode {
     background-color: #222;
@@ -131,6 +144,10 @@ body {
     aspect-ratio: 16 / 9;
 }
 
-
-
-
+/* Footer Section */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
