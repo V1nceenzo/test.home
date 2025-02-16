@@ -1,0 +1,142 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-y: auto;  /* Menambahkan aturan ini */
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+}
+
+/* Kiri: Profile & Menu */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Menu Navbar */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-left: 200px; /* Dorong menu ke kanan */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+
+/* Kanan: Search Bar & Dark Mode */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/*searchBar */
+#searchBar {
+    padding: 10px;  /* Menambah padding agar lebih besar */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;  /* Menambah ukuran font search bar */
+}
+
+
+/* Dark Mode */
+#darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+
+
+
+/* Video Section */
+.video-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.video-card {
+    flex: 0 0 auto;
+    width: 360px;
+    text-align: center;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
