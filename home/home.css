@@ -57,7 +57,7 @@ body {
     display: flex;
     list-style: none;
     gap: 40px;
-    margin-left: 160px; /* Dorong menu ke kanan */
+    margin-left: 100px; /* Dorong menu ke kanan */
 }
 
 .nav-link {
