@@ -24,7 +24,9 @@
         </ul>
     </div>
     <div class="navbar-right">
-        <input type="text" class="search-bar" placeholder="Search...">
+        <input type="text" id="searchBar" class="search-bar" placeholder="Search...">
+            <button id="searchButton">🔍</button>
+
         <button id="darkModeToggle">🌙</button>
     </div>
 </nav>
@@ -61,13 +63,36 @@
     </footer>
     
     <script>
-        /*Funsgi search
-        document.getElementById("searchBar").addEventListener("keyup", function(event) {
-            if (event.key === "Enter") {
-                alert("Pencarian untuk: " + this.value);
+        /*Funsgi search*/
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchBar = document.getElementById("searchBar");
+            const searchButton = document.getElementById("searchButton");
+        
+            function searchContent() {
+                const query = searchBar.value.toLowerCase();
+                const items = document.querySelectorAll("h3, p"); // Cari di judul & paragraf
+        
+                let found = false;
+        
+                items.forEach(item => {
+                    if (item.textContent.toLowerCase().includes(query)) {
+                        item.scrollIntoView({ behavior: "smooth", block: "center" });
+                        found = true;
+                    }
+                });
+        
+                if (!found) {
+                    alert("No results found for: " + query);
+                }
             }
+        
+            searchButton.addEventListener("click", searchContent);
+            searchBar.addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                    searchContent();
+                }
+            });
         });
-        */
 
         /*Fungsi underline pada teks navbar*/
         document.addEventListener("DOMContentLoaded", function () {
