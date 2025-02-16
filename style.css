@@ -1,4 +1,4 @@
-/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -71,11 +71,9 @@ body {
     font-weight: bold;
 }
 
-
 .nav-link:hover {
     color: #ffcc00;
 }
-
 
 /* Kanan: Search Bar & Dark Mode */
 .navbar-right {
@@ -83,6 +81,7 @@ body {
     align-items: center;
     gap: 10px;
 }
+
 
 /*searchBar */
 #searchBar {
@@ -92,15 +91,16 @@ body {
     font-size: 18px;  /* Menambah ukuran font search bar */
 }
 
-
 /* Dark Mode */
 #darkModeToggle {
     background: none;
     border: none;
-    font-size: 30px;
+    font-size: 30px;  /* Memperbesar ukuran emoji toggle dark mode */
     cursor: pointer;
     color: white;
+    margin-right: 10px
 }
+
 
 .dark-mode {
     background-color: #222;
@@ -129,12 +129,4 @@ body {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
-}
-
-/* Footer Section */
-footer {
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
 }
