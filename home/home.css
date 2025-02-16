@@ -83,7 +83,6 @@ body {
 .navbar-right {
     display: flex;
     align-items: center;
-    gap: 40px;
 }
 
 /*searchBar */
@@ -100,7 +99,7 @@ body {
     border: none;
     font-size: 20px;
     cursor: pointer;
-
+    margin-left: 5px;
 }
 
 
