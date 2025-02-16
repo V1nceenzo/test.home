@@ -67,8 +67,7 @@ body {
 }
 
 .nav-link.active {
-    text-decoration: underline;
-    font-weight: bold;
+    border-bottom: 2px solid white;
 }
 
 
