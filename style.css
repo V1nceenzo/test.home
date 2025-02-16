@@ -55,7 +55,8 @@ body {
 .navbar-menu {
     display: flex;
     list-style: none;
-    gap: 55px;
+    gap: 10px;
+    margin-left: auto; /* Dorong menu ke kanan */
 }
 
 .nav-link {
