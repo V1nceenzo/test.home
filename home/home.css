@@ -119,6 +119,10 @@ body {
     color: white;
 }
 
+.hamburger {
+    display: none; /* Secara default, sembunyikan hamburger */
+}
+
 /* Video Section */
 .video-list {
     display: flex;
@@ -258,7 +262,7 @@ footer {
 
     /* Hamburger Menu */
     .hamburger {
-        display: none;
+        display: block; /* Tampilkan hamburger di layar mobile */
         font-size: 30px;
         background: none;
         border: none;
@@ -276,10 +280,5 @@ footer {
     .navbar-menu.active {
         display: flex; /* Menampilkan navbar menu ketika hamburger diklik */
     }
-
-    @media screen and (max-width: 768px) {
-        .hamburger {
-            display: block; /* Menampilkan tombol hamburger di mobile */
-        }
-    }
+    
 }
