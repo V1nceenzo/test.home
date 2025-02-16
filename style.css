@@ -57,7 +57,7 @@ body {
     list-style: none;
     gap: 10px;
     margin-left: 200px; /* Dorong menu ke kanan */
-    font-size: 22px;  /* Menambah ukuran font navbar sekitar 50% */
+    font-size: 80px;  /* Menambah ukuran font navbar sekitar 50% */
 }
 
 .nav-link {
