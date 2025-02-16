@@ -87,12 +87,22 @@ body {
 }
 
 /*searchBar */
-#searchBar {
-    padding: 10px;  /* Menambah padding agar lebih besar */
+.search-bar {
+    padding: 5px 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-size: 18px;  /* Menambah ukuran font search bar */
+    font-size: 16px;
+    width: 200px;
 }
+
+#searchButton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
 
 
 /* Dark Mode */
