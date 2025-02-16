@@ -77,6 +77,9 @@
                 if (link.getAttribute("href") === currentPage) {
                     link.classList.add("active");
                 }
+                if (window.location.pathname === "/test.home/") {
+                    window.location.href = "/test.home/index.html";
+                }
             });
         });
         
