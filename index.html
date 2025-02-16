@@ -17,8 +17,8 @@
             <span class="profile-name">V1ncenzo</span>
         </div>
         <ul class="navbar-menu">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="./mods" class="nav-link">Mods</a></li>
+            <li><a href="/test.home/" class="nav-link">Home</a></li>
+            <li><a href="/test.home/mods" class="nav-link">Mods</a></li>
             <li><a href="tutorial.html" class="nav-link">Tutorial</a></li>
             <li><a href="faq.html" class="nav-link">FAQ</a></li>
         </ul>
@@ -72,14 +72,25 @@
         /*Fungsi underline pada teks navbar*/
         document.addEventListener("DOMContentLoaded", function () {
             const links = document.querySelectorAll(".nav-link");
-            const currentPage = window.location.pathname.split("/").pop();
+            let currentPage = window.location.pathname.split("/").pop();
+        
+            // Kalau lagi di halaman utama tanpa "index.html", set currentPage ke "index.html"
+            if (currentPage === "" || currentPage === "home") {
+                currentPage = "index.html";
+            }
+        
+            // Kalau URL gak ada ekstensi .html, tambahin kemungkinan tanpa .html
+            if (!currentPage.includes(".html")) {
+                currentPage += ".html";
+            }
         
             links.forEach(link => {
-                if (link.getAttribute("href") === currentPage) {
+                if (link.getAttribute("href") === currentPage || link.getAttribute("href") === window.location.pathname) {
                     link.classList.add("active");
                 }
             });
         });
+        
 
         
                 
