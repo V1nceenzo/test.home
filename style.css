@@ -59,12 +59,18 @@ body {
 }
 
 .nav-link {
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s;
 }
+
+.nav-link.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 
 .nav-link:hover {
     color: #ffcc00;
