@@ -230,20 +230,19 @@ footer {
     }
 
     .navbar-right {
-        flex-direction: column;
-        gap: 10px;
+        display: flex; /* Flex container */
+        gap: 10px; /* Spasi antar elemen */
         margin-top: 10px;
         align-items: center; /* Menjaga elemen di tengah */
     }
 
-    /* Membuat tombol darkmode dan search bar lebih responsif */
+    /* Membuat tombol darkmode dan search bar berada dalam satu baris */
     #darkModeToggle, #searchButton {
-        margin-left: 0;
         font-size: 24px;  /* Menyesuaikan ukuran font pada mobile */
     }
 
     .search-bar {
-        width: 90%; /* Lebar search bar hampir penuh layar */
+        width: 70%; /* Lebar search bar hampir penuh layar */
         font-size: 14px; /* Ukuran font lebih kecil agar pas */
     }
 
@@ -258,3 +257,4 @@ footer {
         width: 90%; /* Menyesuaikan lebar video agar pas */
     }
 }
+
