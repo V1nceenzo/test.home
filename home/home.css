@@ -219,7 +219,7 @@ footer {
         flex-direction: column;
         gap: 10px;
         margin-left: 0;
-        align-items: center; /* Rapi di tengah */
+        align-items: center;
     }
 
     .navbar-menu {
@@ -231,20 +231,21 @@ footer {
     }
 
     .navbar-right {
-        display: flex; /* Membuat .navbar-right menjadi flex */
-        justify-content: center; /* Menjaga tombol search dan dark mode di tengah */
-        gap: 10px; /* Spasi antar elemen */
+        display: flex;  /* Menjadikan navbar-right flex container */
+        justify-content: center; /* Menyusun elemen di tengah */
+        gap: 10px; /* Spasi antara search dan dark mode */
         margin-top: 10px;
-        width: 100%; /* Agar lebar navbar-right memenuhi layar */
+        flex-wrap: nowrap; /* Pastikan elemen tidak terpisah ke bawah */
+        width: 100%; /* Lebar penuh */
     }
 
     .search-bar {
-        width: 70%; /* Lebar search bar hampir penuh layar */
-        font-size: 14px; /* Ukuran font lebih kecil agar pas */
+        width: 70%; /* Lebar search bar agar sesuai */
+        font-size: 14px; /* Menyesuaikan ukuran font */
     }
 
     #searchButton, #darkModeToggle {
-        font-size: 24px; /* Ukuran font pada mobile */
+        font-size: 24px; /* Menyesuaikan ukuran tombol */
     }
 
     /* Video Section */
@@ -258,4 +259,5 @@ footer {
         width: 90%; /* Menyesuaikan lebar video agar pas */
     }
 }
+
 
