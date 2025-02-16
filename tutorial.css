@@ -71,7 +71,9 @@ body {
     font-weight: bold;
 }
 
-
+.nav-link:hover {
+    color: #ffcc00;
+}
 
 
 /*searchBar */
