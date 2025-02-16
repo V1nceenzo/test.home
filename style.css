@@ -57,14 +57,13 @@ body {
     list-style: none;
     gap: 10px;
     margin-left: 200px; /* Dorong menu ke kanan */
-    font-size: 80px;  /* Menambah ukuran font navbar sekitar 50% */
 }
 
 .nav-link {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     transition: color 0.3s;
 }
 
