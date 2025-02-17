@@ -173,6 +173,7 @@ body {
         flex: 1 1 100%;
         width: 100%;
         text-align: center;
+        transition: width 0.3s ease, height 0.3s ease, aspect-ratio 0.3s ease;
     }
 
     .video-card iframe {
@@ -212,6 +213,7 @@ body {
         flex: 1 1 100%;
         width: 100%;
         text-align: center;
+        transition: width 0.3s ease, height 0.3s ease, aspect-ratio 0.3s ease;
     }
     
     .video-card iframe {
