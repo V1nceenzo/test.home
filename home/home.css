@@ -1,3 +1,4 @@
+
 /* Reset CSS */
 * {
     margin: 0;
@@ -178,12 +179,14 @@ body {
     margin: 0; /* Hapus margin */
 }
 
+
 .video-card iframe {
     width: 100%;
     height: auto;
+    max-width: 100%; /* Pastikan iframe tidak melebihi lebar parent */
     border: none;
     border-radius: 10px;
-    aspect-ratio: 16 / 9; /* Mempertahankan rasio aspek video */
+    aspect-ratio: 16 / 9;
 }
 
 
@@ -204,12 +207,20 @@ body {
     }
     
     .video-list {
+        display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Perbaiki dengan auto-fill */
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto; /* Pusatkan grid */
+        justify-items: center; /* Pusatkan semua item di dalam grid */
+        padding: 20px;
     }
 
     .video-card {
         width: 100%;
         max-width: 350px; /* Batasi lebar maksimum */
+        height: auto;
+        margin: 0;
     }
 
     .video-card iframe {
@@ -297,12 +308,20 @@ footer {
     }
     
     .video-list {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); /* Lebar video-card antara 300px dan 350px */
-        justify-content: center; /* Pusatkan video-card */
+        display: flex; /* Menggunakan flexbox untuk pemusatan */
+        flex-wrap: wrap;
+        justify-content: center; /* Memusatkan konten */
+        gap: 40px;
+        margin: 0 auto; /* Menambahkan margin auto */
+        padding: 20px;
     }
 
     .video-card {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
         max-width: 350px; /* Batasi lebar maksimum */
+        margin: 0; /* Menghapus margin */
     }
 
     .video-card iframe {
@@ -315,16 +334,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 769px) {
-    .video-list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-    }
-}
+
 
 
 /* Responsive Styles */
@@ -375,22 +385,26 @@ footer {
     
 
     .video-list {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Lebar lebih kecil untuk mobile */
+        display: flex; /* Menggunakan flexbox untuk pemusatan */
+        flex-direction: column; /* Atur tampilan vertikal */
+        align-items: center; /* Pusatkan video */
+        gap: 40px;
+        margin: 0 auto; /* Menambahkan margin auto */
+        padding: 20px;
     }
 
     .video-card {
-        max-width: 100%; /* Lebar penuh pada layar kecil */
+        width: 100%;
+        max-width: 350px; /* Lebar maksimum sedikit lebih besar untuk mobile */
     }
             
-    .video-card iframe {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        border: none;
-        border-radius: 10px;
-        aspect-ratio: 16 / 9;
-    }
-
+.video-card iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 10px;
+    aspect-ratio: 16 / 9;
 }
 
     
