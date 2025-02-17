@@ -211,39 +211,6 @@ footer {
 
 @media screen and (max-width: 768px) {
     /* Navbar */
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-left {
-        flex-direction: column;
-        gap: 10px;
-        margin-left: 0;
-        align-items: center;
-    }
-
-    .sidebar-menu {
-        position: fixed;
-        top: 0;
-        left: -250px; /* Mulai di luar layar */
-        width: 250px;
-        height: 100%;
-        background: #222;
-        display: flex;
-        flex-direction: column;
-        padding-top: 60px;
-        transition: left 0.3s ease-in-out;
-    }
-
-    .navbar-right {
-        display: flex;
-        justify-content: center; /* Menyusun elemen di tengah */
-        gap: 10px; /* Memberikan spasi antar elemen */
-        margin-top: 10px;
-        flex-wrap: nowrap; /* Pastikan elemen tetap dalam satu baris */
-        width: 100%; /* Lebar penuh */
-    }
 
     .search-bar {
         width: 70%; /* Membuat search bar lebih lebar untuk tampilan mobile */
@@ -265,20 +232,37 @@ footer {
         width: 50%;
     }
 
-        .sidebar-menu a {
-            padding: 15px;
-            text-decoration: none;
-            color: white;
-            display: block;
-        }
-        
-        .sidebar-menu.active {
-            left: 0; /* Muncul ke dalam layar */
-        }
-        
-        /* Hamburger */
-        .hamburger {
-            font-size: 24px;
-            cursor: pointer;
-        }
+    /* Sidebar Menu */
+    .sidebar-menu {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Tersembunyi awalnya */
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        padding-top: 60px;
+        transition: left 0.3s ease-in-out;
+    }
+    
+    .sidebar-menu a {
+        display: block;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    
+    .sidebar-menu a:hover {
+        background-color: #575757;
+    }
+    
+    .sidebar-menu.active {
+        left: 0; /* Muncul saat tombol ditekan */
+    }
+    
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+    }
 }
