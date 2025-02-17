@@ -162,22 +162,24 @@ body {
 
 /* Video Section */
     .video-list {
-        display: flex;
-        overflow-x: auto;
-        gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
         padding: 20px;
-        white-space: nowrap;
+        justify-content: center;
     }
-    
+
     .video-card {
-        flex: 0 0 auto;
-        width: 360px;
+        flex: 1 1 100%;
+        width: 100%;
         text-align: center;
     }
-    
+
     .video-card iframe {
         width: 100%;
         height: auto;
+        border: none;
+        border-radius: 10px;
         aspect-ratio: 16 / 9;
     }
 
@@ -199,22 +201,24 @@ body {
     }
     
     .video-list {
-        display: flex;
-        overflow-x: auto;
-        gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
         padding: 20px;
-        white-space: nowrap;
+        justify-content: center;
     }
     
     .video-card {
-        flex: 0 0 auto;
-        width: 360px;
+        flex: 1 1 100%;
+        width: 100%;
         text-align: center;
     }
     
     .video-card iframe {
         width: 100%;
         height: auto;
+        border: none;
+        border-radius: 10px;
         aspect-ratio: 16 / 9;
     }
 }
@@ -293,23 +297,25 @@ footer {
         display: block;
     }
     
-        .video-list {
-        display: flex;
-        overflow-x: auto;
-        gap: 15px;
+    .video-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
         padding: 20px;
-        white-space: nowrap;
+        justify-content: center;
     }
-    
+
     .video-card {
-        flex: 0 0 auto;
-        width: 360px;
+        flex: 1 1 100%;
+        width: 100%;
         text-align: center;
     }
-    
+
     .video-card iframe {
         width: 100%;
         height: auto;
+        border: none;
+        border-radius: 10px;
         aspect-ratio: 16 / 9;
     }
 }
@@ -364,16 +370,16 @@ footer {
     }
     
 
-        .video-list {
-        flex-direction: column;
-        align-items: center;
-        overflow-x: hidden;
-    }
+            .video-list {
+                flex-direction: column;
+                overflow-x: hidden;
+            }
+            
+            .video-card {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16/9;
+            }
 
-    .video-card {
-        width: 90%;
-    }
     
 }
-
-    
