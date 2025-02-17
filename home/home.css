@@ -266,5 +266,47 @@ footer {
                 aspect-ratio: 16/9;
             }
 
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
 
+    .navbar-menu {
+        display: flex;
+        gap: 30px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .search-bar {
+        width: 250px;
+    }
+
+    .sidebar-menu {
+        width: 200px;
+    }
+
+    .video-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .video-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-card iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+
+    
 }
