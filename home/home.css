@@ -164,11 +164,11 @@ body {
 /* Video Section */
 .video-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Atur kolom dinamis */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Menyesuaikan ukuran video dengan auto-fill */
     gap: 20px;
     max-width: 1200px;
-    margin: 0 auto;
-    justify-items: center; /* Pusatkan item di dalam grid */
+    margin: 0 auto; /* Pusatkan grid */
+    justify-items: center; /* Pusatkan semua item di dalam grid */
     padding: 20px;
 }
     
