@@ -171,7 +171,7 @@ body {
     
 .video-card {
     width: 100%;
-    max-width: 400px; /* Batasi lebar maksimum kartu video */
+    max-width: 350px; /* Batasi lebar maksimum kartu video */
     height: auto;
     aspect-ratio: 16 / 9;
     margin: 0; /* Pusatkan kartu video */
