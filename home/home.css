@@ -163,10 +163,10 @@ body {
 /* Video Section */
 .video-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Perbaiki dengan auto-fill */
     gap: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Memusatkan list */
+    margin: 0 auto; /* Pusatkan grid */
 }
     
 .video-card {
@@ -175,6 +175,7 @@ body {
     height: auto; /* Tinggi mengikuti rasio aspek */
     margin: 0; /* Hapus margin */
 }
+
 
 .video-card iframe {
     width: 100%;
@@ -204,7 +205,7 @@ body {
     
     .video-list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Perbaiki dengan auto-fill */
         gap: 20px;
         max-width: 1200px;
         margin: 0 auto; /* Pusatkan grid */
