@@ -164,7 +164,7 @@ body {
 .video-container {
     width: 100%;
     max-width: 1200px;
-    padding: 0 10%; /* Padding kiri-kanan biar konten nggak nyebar */
+    padding: 0 50%; /* Padding kiri-kanan biar konten nggak nyebar */
     margin: 0 auto; /* Biar tetap center */
 }
 
