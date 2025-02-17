@@ -211,6 +211,9 @@ footer {
 
 @media screen and (max-width: 768px) {
     /* Navbar */
+        .navbar {
+        display: none;
+    }
 
     .search-bar {
         width: 70%; /* Membuat search bar lebih lebar untuk tampilan mobile */
