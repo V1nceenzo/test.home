@@ -309,7 +309,16 @@ footer {
     }
 }
 
-
+@media screen and (min-width: 769px) {
+    .video-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+}
 
 
 /* Responsive Styles */
