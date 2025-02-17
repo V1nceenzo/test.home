@@ -203,9 +203,7 @@ body {
     }
     
     .video-list {
-        display: flex;
-        justify-content: space between; /* Mulai dari kiri */
-        align-items: center; 
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 
     .video-card {
