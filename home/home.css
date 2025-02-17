@@ -386,6 +386,7 @@ footer {
     }
 
     .video-card {
+        width: 100%;
         max-width: 90%; /* Lebar maksimum sedikit lebih besar untuk mobile */
     }
             
