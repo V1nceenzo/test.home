@@ -210,6 +210,42 @@ footer {
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-left {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar-right {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .search-container {
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    #darkModeToggle, #hamburger {
+        font-size: 24px;
+    }
+
+    .profile {
+        margin-right: 10px;
+    }
+
     .navbar-menu {
         display: none;
     }
@@ -217,14 +253,7 @@ footer {
     #hamburger {
         display: block;
     }
-
-    .navbar-right {
-        gap: 20px;
-    }
-
-    .search-bar {
-        width: 150px;
-    }
+    
 
             .video-list {
                 flex-direction: column;
@@ -237,5 +266,7 @@ footer {
                 aspect-ratio: 16/9;
             }
 
+
+    
 
 }
