@@ -203,6 +203,7 @@ body {
     }
     
     .video-list {
+        display: flex;
         justify-content: space between; /* Mulai dari kiri */
         align-items: center; 
     }
