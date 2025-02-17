@@ -164,6 +164,7 @@ body {
 .video-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Menyesuaikan lebar dan wrap */
+    max-width: 350px;
     gap: 20px; /* Jarak antar video */
     padding: 20px; /* Padding untuk ruang di sekitar video */
 }
@@ -199,7 +200,7 @@ body {
     }
     
     .video-list {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Lebar lebih kecil untuk mobile */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Lebar lebih kecil untuk mobile */
     }
 
     .video-card {
