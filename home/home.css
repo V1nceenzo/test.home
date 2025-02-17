@@ -224,15 +224,17 @@ footer {
     }
 
     .navbar-menu {
-        display: none;
-        position: absolute; /* Agar tidak mendorong elemen lain */
-        top: 50px; /* Sesuaikan agar muncul di bawah hamburger */
-        left: 0;
-        width: 100%;
-        background: #333; /* Warna latar belakang */
+        position: fixed;
+        top: 0;
+        left: -100%; /* Mulai dari luar layar */
+        width: 70%; /* Atur lebar sidebar */
+        height: 100%;
+        background: #222; /* Warna latar */
+        display: flex;
         flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
+        gap: 15px;
+        padding-top: 60px;
+        transition: left 0.3s ease-in-out;
     }
 
     .navbar-right {
@@ -282,7 +284,7 @@ footer {
     }
 
     .navbar-menu.active {
-        display: flex;
+        left: 0; /* Muncul dari kiri */
     }
     
 }
