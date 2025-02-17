@@ -213,9 +213,7 @@ body {
         display: grid;
         gap: 20px;
         max-width: 1200px;
-        margin: 0 auto; /* Pusatkan grid */
-        justify-items: center; /* Pusatkan semua item di dalam grid */
-        padding: 20px;
+
 
     }
 
