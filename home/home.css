@@ -168,6 +168,7 @@ body {
     max-width: 1200px;
     margin: 0 auto; /* Pusatkan grid */
     justify-items: center; /* Pusatkan semua item di dalam grid */
+     padding: 0 10vw; /* Memberikan padding kiri dan kanan dengan persentase */
 }
     
 .video-card {
