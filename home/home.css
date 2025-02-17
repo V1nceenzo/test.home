@@ -230,13 +230,14 @@ footer {
 
     /* Video Section */
     .video-list {
-        flex-direction: column;
+        flex-direction: column;  /* Membuat video-list menjadi vertikal */
         align-items: center;
-        overflow-x: hidden;
+        overflow-x: hidden;  /* Menghilangkan scroll horizontal */
     }
 
     .video-card {
-        width: 50%;
+        width: 80%;  /* Membuat lebar card lebih besar di layar kecil */
+        margin-bottom: 20px;
     }
 
     /* Sidebar Menu */
