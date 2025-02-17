@@ -164,7 +164,7 @@ body {
 
 .video-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
 
     margin: 0 auto; /* Biar tetap center */
 }
@@ -176,6 +176,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-items: center; /* Supaya tetap rapih di tengah */
+    padding: 50px;
 }
 
     
@@ -216,7 +217,6 @@ body {
     .video-list {
         
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-        width: 100%;
                 
 
     }
