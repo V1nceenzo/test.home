@@ -203,7 +203,7 @@ body {
     }
     
     .video-list {
-        justify-content: flex-start; /* Mulai dari kiri */
+        justify-content: space between; /* Mulai dari kiri */
         margin-left: 0; /* Hapus margin kiri */
     }
 
