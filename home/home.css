@@ -163,11 +163,9 @@ body {
 /* Video Section */
 .video-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); /* Lebar video-card antara 300px dan 350px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Kolom akan menyesuaikan dengan lebar container */
     gap: 20px; /* Jarak antar video */
-    padding: 20px; /* Padding untuk ruang di sekitar video */
-    max-width: 1200px; /* Batasi lebar maksimum container */
-    margin: 0 auto; /* Pusatkan container */
+    justify-content: start; /* Menyusun video-card dari kiri */
 }
 
 
@@ -204,7 +202,6 @@ body {
     
     .video-list {
         grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); /* Lebar video-card antara 300px dan 350px */
-        justify-content: start; /* Pusatkan video-card */
     }
 
     .video-card {
