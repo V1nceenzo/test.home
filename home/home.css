@@ -161,24 +161,31 @@ body {
 }
 
 /* Video Section */
-    .video-list {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    }
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Batasi lebar maksimum */
+    margin: 0 auto; /* Pusatkan container */
+}
     
-    .video-card {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
+.video-card {
+    width: 100%;
+    max-width: 400px; /* Batasi lebar maksimum kartu video */
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto; /* Pusatkan kartu video */
+}
 
-    .video-card iframe {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        border: none;
-        border-radius: 10px;
-        aspect-ratio: 16 / 9;
-    }
+.video-card iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Pastikan iframe tidak melebihi lebar parent */
+    border: none;
+    border-radius: 10px;
+    aspect-ratio: 16 / 9;
+}
 
 
 /* Desktop Styles (1025px ke atas) */
@@ -198,7 +205,7 @@ body {
     }
     
     .video-list {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom pada desktop */
     }
     
     .video-card {
