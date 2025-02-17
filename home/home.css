@@ -175,6 +175,14 @@ body {
     text-align: center;
 }
 
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    aspect-ratio: 16 / 9; /* Memastikan rasio thumbnail sesuai */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
 /* Overlay */
 .overlay {
     display: none;
