@@ -308,7 +308,7 @@ footer {
         display: flex; /* Menggunakan flexbox untuk pemusatan */
         flex-wrap: wrap;
         justify-content: center; /* Memusatkan konten */
-        gap: 100px;
+        gap: 40px;
         margin: 0 auto; /* Menambahkan margin auto */
     }
 
@@ -384,13 +384,13 @@ footer {
         display: flex; /* Menggunakan flexbox untuk pemusatan */
         flex-direction: column; /* Atur tampilan vertikal */
         align-items: center; /* Pusatkan video */
-        gap: 20px;
+        gap: 40px;
         margin: 0 auto; /* Menambahkan margin auto */
     }
 
     .video-card {
         width: 100%;
-        max-width: 90%; /* Lebar maksimum sedikit lebih besar untuk mobile */
+        max-width: 350px; /* Lebar maksimum sedikit lebih besar untuk mobile */
     }
             
 .video-card iframe {
