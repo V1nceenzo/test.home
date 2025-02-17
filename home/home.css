@@ -164,11 +164,11 @@ body {
 /* Video Section */
 .video-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Perbaiki dengan auto-fill */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Atur kolom dinamis */
     gap: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Pusatkan grid */
-    justify-items: center; /* Pusatkan semua item di dalam grid */
+    margin: 0 auto;
+    justify-items: center; /* Pusatkan item di dalam grid */
     padding: 20px;
 }
     
@@ -207,12 +207,11 @@ body {
     }
     
     .video-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Perbaiki dengan auto-fill */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Kolom dinamis */
         gap: 20px;
         max-width: 1200px;
-        margin: 0 auto; /* Pusatkan grid */
-        justify-items: center; /* Pusatkan semua item di dalam grid */
+        margin: 0 auto;
+        justify-items: center;
         padding: 20px;
     }
 
@@ -312,7 +311,7 @@ footer {
         flex-wrap: wrap;
         justify-content: center; /* Memusatkan konten */
         gap: 40px;
-        margin: 0 auto; /* Menambahkan margin auto */
+        margin: 0 auto;
         padding: 20px;
     }
 
