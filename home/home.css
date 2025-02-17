@@ -123,6 +123,13 @@ body {
     color: white;
 }
 
+/* Active Link */
+.nav-link.active,
+.sidebar-menu a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* Sidebar */
 .sidebar-menu {
     position: fixed;
@@ -151,6 +158,21 @@ body {
 
 .sidebar-menu a:hover {
     background-color: #45a049;
+}
+
+/* Video Section */
+.video-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px;
+    white-space: nowrap; /* Tambahkan ini */
+}
+
+.video-card {
+    flex: 0 0 auto;
+    width: 360px;
+    text-align: center;
 }
 
 /* Overlay */
