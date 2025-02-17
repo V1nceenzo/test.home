@@ -80,3 +80,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setActiveLink();
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const videoCards = document.querySelectorAll(".video-card");
+
+    videoCards.forEach(card => {
+        const thumbnail = card.querySelector(".video-thumbnail");
+        const videoId = thumbnail.src.split("/vi/")[1].split("/")[0]; // Ambil ID video dari URL thumbnail
+
+        thumbnail.addEventListener("click", function () {
+            const iframe = document.createElement("iframe");
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("allowfullscreen", "");
+            iframe.style.width = "100%";
+            iframe.style.aspectRatio = "16 / 9";
+
+            card.innerHTML = ""; // Hapus thumbnail
+            card.appendChild(iframe); // Tambahkan iframe video
+        });
+    });
+});
