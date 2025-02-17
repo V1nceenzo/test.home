@@ -310,16 +310,7 @@ footer {
 }
 
 
-@media screen and (min-width: 769px) {
-    .video-list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-    }
-}
+
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -376,14 +367,14 @@ footer {
         max-width: 100%; /* Lebar penuh pada layar kecil */
     }
             
-.video-card iframe {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    border: none;
-    border-radius: 10px;
-    aspect-ratio: 16 / 9;
-}
+    .video-card iframe {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border: none;
+        border-radius: 10px;
+        aspect-ratio: 16 / 9;
+    }
 
 }
 
