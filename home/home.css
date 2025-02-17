@@ -209,10 +209,14 @@ footer {
 
 /* Styling lainnya */
 
-@media screen and (max-width: 768px) {
-    /* Navbar */
-        .navbar {
-        display: none;
+@media (max-width: 768px) {
+        .navbar-desktop {
+            display: none; /* Sembunyikan navbar desktop di mode mobile */
+        }
+    
+        .navbar-mobile {
+            display: flex; /* Tampilkan navbar mobile */
+        }
     }
 
     .search-bar {
@@ -267,5 +271,10 @@ footer {
         cursor: pointer;
         font-size: 30px;
         color: white;
+    }
+
+@media (min-width: 769px) {
+    .navbar-mobile {
+        display: none; /* Sembunyikan navbar mobile di mode desktop */
     }
 }
