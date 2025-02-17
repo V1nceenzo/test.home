@@ -165,8 +165,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
-    max-width: 1200px; /* Batasi lebar maksimum */
-    margin: 0; /* Hapus margin auto */
+    max-width: 1200px;
+    margin: 0 auto; /* Memusatkan list */
 }
     
 .video-card {
@@ -366,8 +366,9 @@ footer {
     
 
     .video-list {
-        flex-direction: column; /* Atur vertical untuk layar lebih kecil */
+        flex-direction: column; /* Atur tampilan vertikal */
         align-items: center; /* Pusatkan video */
+        margin: 0 auto; /* Tambahkan margin agar lebih seimbang */
     }
 
     .video-card {
