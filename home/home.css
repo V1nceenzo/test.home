@@ -307,7 +307,7 @@ footer {
     .video-list {
         display: flex; /* Menggunakan flexbox untuk pemusatan */
         flex-wrap: wrap;
-        justify-content: center; /* Memusatkan konten */
+
         gap: 20px;
         margin: 0 auto; /* Menambahkan margin auto */
         justify-items: center; 
