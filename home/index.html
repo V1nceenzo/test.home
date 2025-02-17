@@ -8,34 +8,39 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <nav class="navbar">
-    <div class="navbar-left">
-        <div class="profile">
-            <a href="https://www.youtube.com/@V1ncenzo-csn?sub_confirmation=1" target="_blank">
-                <img class="profile-img" src="https://yt3.googleusercontent.com/w-_LAzTXPsYUlSs9ngpI2WZ5eQjaObr8OqwibwTZLajPMXIWHS8BV_XiuI-zdVGoFn7a0quULXE=s160-c-k-c0x00ffffff-no-rj" alt="Profile Image">
-            </a>
-            <span class="profile-name">Vincenzo</span>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="profile">
+                    <a href="https://www.youtube.com/@V1ncenzo-csn?sub_confirmation=1" target="_blank">
+                        <img class="profile-img" src="https://yt3.googleusercontent.com/w-_LAzTXPsYUlSs9ngpI2WZ5eQjaObr8OqwibwTZLajPMXIWHS8BV_XiuI-zdVGoFn7a0quULXE=s160-c-k-c0x00ffffff-no-rj" alt="Profile Image">
+                    </a>
+                    <span class="profile-name">Vincenzo</span>
+                </div>
+                <ul class="navbar-menu">
+                    <li><a href="/test.home/home/" class="nav-link">Home</a></li>
+                    <li><a href="/test.home/mods/" class="nav-link">Mods</a></li>
+                    <li><a href="/test.home/tutorial/" class="nav-link">Tutorial</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <div class="search-container">
+                    <input type="text" class="search-bar" placeholder="Search...">
+                    <button id="searchButton">🔍</button>
+                </div>
+                <button id="darkModeToggle">🌙</button>
+                <div class="hamburger" id="hamburger">☰</div>
+            </div>
+        </nav>
+        
+        <!-- Sidebar (Ditaruh di luar navbar utama) -->
+        <div class="sidebar-menu" id="sidebarMenu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
         </div>
-        <ul class="navbar-menu">
-            <li><a href="/test.home/home/" class="nav-link">Home</a></li>
-            <li><a href="/test.home/mods/" class="nav-link">Mods</a></li>
-            <li><a href="/test.home/tutorial/" class="nav-link">Tutorial</a></li>
-            <li><a href="faq.html" class="nav-link">FAQ</a></li>
-        </ul>
-    </div>
-    <div class="navbar-right">
-        <div class="search-container">
-            <input type="text" class="search-bar" placeholder="Search...">
-            <button id="searchButton">🔍</button>
-        </div>
 
-        <button id="darkModeToggle">🌙</button>
-
-        <button class="hamburger" id="hamburger">☰</button>
-
-    </div>
-
-</nav>
 
     
     <header class="hero">
@@ -155,13 +160,22 @@
 
                 // Hamburger
                 document.addEventListener("DOMContentLoaded", function () {
-            const hamburger = document.getElementById("hamburger");
-            const navbarMenu = document.querySelector(".navbar-menu");
-        
-            hamburger.addEventListener("click", function () {
-                navbarMenu.classList.toggle("active");
-            });
-        });
+                    const hamburger = document.getElementById("hamburger");
+                    const sidebarMenu = document.getElementById("sidebarMenu");
+                
+                    hamburger.addEventListener("click", function () {
+                        sidebarMenu.classList.toggle("active");
+                    });
+                
+                    // Menutup sidebar jika klik di luar menu
+                    document.addEventListener("click", function (event) {
+                        if (!sidebarMenu.contains(event.target) && !hamburger.contains(event.target)) {
+                            sidebarMenu.classList.remove("active");
+                        }
+                    });
+                });
+
+
 
 
     </script>
