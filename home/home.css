@@ -183,6 +183,47 @@ body {
         aspect-ratio: 16 / 9;
     }
 
+
+/* Desktop Styles (1025px ke atas) */
+@media screen and (min-width: 1025px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .navbar-menu {
+        display: flex !important;
+    }
+    
+    #hamburger {
+        display: none !important;
+    }
+    
+    .video-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+    }
+    
+    .video-card {
+        flex: 1 1 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .video-card iframe {
+        width: 100%;
+        height: auto;
+        border: none;
+        border-radius: 10px;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+
 /* Overlay */
 .overlay {
     display: none;
