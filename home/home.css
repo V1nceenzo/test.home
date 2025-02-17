@@ -203,11 +203,12 @@ body {
     }
     
     .video-list {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Lebar lebih kecil untuk mobile */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); /* Lebar video-card antara 300px dan 350px */
+        justify-content: center; /* Pusatkan video-card */
     }
 
     .video-card {
-        max-width: 100%; /* Lebar penuh pada layar kecil */
+        max-width: 350px; /* Batasi lebar maksimum */
     }
 
     .video-card iframe {
