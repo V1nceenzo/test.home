@@ -24,14 +24,12 @@ body {
     background-color: #4CAF50;
 }
 
-/* Kiri: Profile & Menu */
 .navbar-left {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-/* Profile */
 .profile {
     display: flex;
     align-items: center;
@@ -50,7 +48,6 @@ body {
     font-weight: bold;
 }
 
-/* Menu Navbar */
 .navbar-menu {
     display: flex;
     list-style: none;
@@ -75,17 +72,16 @@ body {
     color: #ffcc00;
 }
 
-/* Kanan: Search Bar & Dark Mode */
 .navbar-right {
     display: flex;
     align-items: center;
-    gap: 50px; /* Memberikan jarak antara container search dan dark mode */
+    gap: 50px;
 }
 
 .search-container {
     display: flex;
-    align-items: center; /* Membuat search bar dan icon search tetap berdekatan */
-    gap: 5px; /* Memberikan jarak antara search bar dan icon search */
+    align-items: center;
+    gap: 5px;
 }
 
 .search-bar {
@@ -104,7 +100,6 @@ body {
     margin-left: 5px;
 }
 
-/* Dark Mode */
 #darkModeToggle {
     background: none;
     border: none;
@@ -114,149 +109,81 @@ body {
     margin-left: 10px;
 }
 
+#hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
 .dark-mode {
     background-color: #222;
     color: white;
 }
 
-.hamburger {
-    display: none; /* Secara default, sembunyikan hamburger */
-}
-
-/* Video Section */
-.video-list {
-    display: flex;
-    overflow-x: auto;
-    gap: 15px;
-    padding: 20px;
-    white-space: nowrap;
-}
-
-.video-card {
-    flex: 0 0 auto;
-    width: 360px;
-    text-align: center;
-}
-
-.video-card iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-}
-
-/* Footer Section */
-footer {
-    margin-top: 30px;
-    padding: 10px;
+/* Sidebar */
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
     background-color: #4CAF50;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar-menu.active {
+    left: 0;
+}
+
+.sidebar-menu a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
     color: white;
+    display: block;
+    transition: 0.3s;
 }
 
-@media screen and (max-width: 1024px) {
-    /* Navbar */
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 15px;
-    }
-
-    .navbar-left {
-        flex-direction: column;
-        gap: 10px;
-        margin-left: 0;
-        align-items: center;
-    }
-
-    .navbar-menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .navbar-right {
-        display: flex;
-        justify-content: center; /* Memastikan elemen tetap di tengah */
-        gap: 10px; /* Memberikan jarak antar elemen */
-        margin-top: 10px;
-        flex-wrap: nowrap; /* Pastikan elemen tidak turun ke bawah */
-        width: 100%; /* Lebar penuh */
-    }
-
-    /* Membuat tombol darkmode dan search bar lebih responsif */
-    #darkModeToggle, #searchButton {
-        font-size: 28px;
-    }
-
-    .search-bar {
-        width: 80%;
-        font-size: 14px;
-    }
-
-    /* Video Section */
-    .video-list {
-        flex-direction: column;
-        align-items: center;
-        overflow-x: hidden;
-    }
-
-    .video-card {
-        width: 90%;
-        margin-bottom: 20px;
-    }
+.sidebar-menu a:hover {
+    background-color: #45a049;
 }
 
-/* Styling lainnya */
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
 
+.overlay.active {
+    display: block;
+}
+
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
-    /* Navbar */
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-left {
-        flex-direction: column;
-        gap: 10px;
-        margin-left: 0;
-        align-items: center;
-    }
-
     .navbar-menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-left: 0;
-        margin-top: 10px;
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
     }
 
     .navbar-right {
-        display: flex;
-        justify-content: center; /* Menyusun elemen di tengah */
-        gap: 10px; /* Memberikan spasi antar elemen */
-        margin-top: 10px;
-        flex-wrap: nowrap; /* Pastikan elemen tetap dalam satu baris */
-        width: 100%; /* Lebar penuh */
+        gap: 20px;
     }
 
     .search-bar {
-        width: 70%; /* Membuat search bar lebih lebar untuk tampilan mobile */
-        font-size: 14px; /* Mengurangi ukuran font */
-    }
-
-    #searchButton, #darkModeToggle {
-        font-size: 24px; /* Menyesuaikan ukuran tombol */
-    }
-
-    /* Video Section */
-    .video-list {
-        flex-direction: column;
-        align-items: center;
-        overflow-x: hidden;
-    }
-
-    .video-card {
-        width: 90%;
+        width: 150px;
     }
 }
