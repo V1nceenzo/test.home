@@ -174,9 +174,9 @@ body {
 .video-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 10px;
     justify-items: center; /* Supaya tetap rapih di tengah */
-    padding: 100px;
+    padding: 20px;
 }
 
     
