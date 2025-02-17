@@ -5,38 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial</title>
-    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-
-    <!-- Navbar -->
     <nav class="navbar">
-    <div class="navbar-left">
-        <div class="profile">
-            <a href="https://www.youtube.com/@V1ncenzo-csn?sub_confirmation=1" target="_blank">
-                <img class="profile-img" src="https://yt3.googleusercontent.com/w-_LAzTXPsYUlSs9ngpI2WZ5eQjaObr8OqwibwTZLajPMXIWHS8BV_XiuI-zdVGoFn7a0quULXE=s160-c-k-c0x00ffffff-no-rj" alt="Profile Image">
-            </a>
-            <span class="profile-name">Vincenzo</span>
+        <div class="navbar-left">
+            <div class="profile">
+                <a href="https://www.youtube.com/@V1ncenzo-csn?sub_confirmation=1" target="_blank">
+                    <img class="profile-img" src="https://yt3.googleusercontent.com/w-_LAzTXPsYUlSs9ngpI2WZ5eQjaObr8OqwibwTZLajPMXIWHS8BV_XiuI-zdVGoFn7a0quULXE=s160-c-k-c0x00ffffff-no-rj" alt="Profile Image">
+                </a>
+                <span class="profile-name">Vincenzo</span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="/test.home/home/" class="nav-link">Home</a></li>
+                <li><a href="/test.home/mods/" class="nav-link">Mods</a></li>
+                <li><a href="/test.home/tutorial/" class="nav-link">Tutorial</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+            </ul>
         </div>
-        <ul class="navbar-menu">
-            <li><a href="/test.home/home/" class="nav-link">Home</a></li>
-            <li><a href="/test.home/mods/" class="nav-link">Mods</a></li>
-            <li><a href="/test.home/tutorial/" class="nav-link">Tutorial</a></li>
-            <li><a href="faq.html" class="nav-link">FAQ</a></li>
-        </ul>
-    </div>
-    <div class="navbar-right">
-        <div class="search-container">
-            <input type="text" class="search-bar" placeholder="Search...">
-            <button id="searchButton">🔍</button>
+        <div class="navbar-right">
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+                <button id="searchButton">🔍</button>
+            </div>
+            <button id="darkModeToggle">🌙</button>
+            <button id="hamburger">☰</button>
         </div>
+    </nav>
 
-        <button id="darkModeToggle">🌙</button>
+    <!-- Sidebar -->
+    <div class="sidebar-menu" id="sidebarMenu">
+        <a href="/test.home/home/">Home</a>
+        <a href="/test.home/mods/">Mods</a>
+        <a href="/test.home/tutorial/">Tutorial</a>
+        <a href="faq.html">FAQ</a>
     </div>
-</nav>
 
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
 
-  <header class="hero">
+    <header class="hero">
         <h1>Made to Be Played</h1>
         <p>The Very Best in Gaming Content</p>
         <div class="buttons">
@@ -44,111 +52,31 @@
             <a href="https://www.apple.com/app-store/" class="btn">App Store</a>
         </div>
     </header>
-    
-    <section class="content-grid">
-        <div class="video-list">
-            <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/Btx9KtedHAk" frameborder="0" allowfullscreen></iframe>
-                <h3>Video 1</h3>
-            </div>
-            <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-                <h3>Video 2</h3>
-            </div>
-            <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allowfullscreen></iframe>
-                <h3>Video 3</h3>
-            </div>
-        </div>
-    </section>
-    
+
+         <section class="content-grid">
+                <div class="video-list">
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/Btx9KtedHAk?=hd720" frameborder="0" allowfullscreen></iframe>
+                        <h3>Video 1</h3>
+                    </div>
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?=hd720" frameborder="0" allowfullscreen></iframe>
+                        <h3>Video 2</h3>
+                    </div>
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ?=hd720" frameborder="0" allowfullscreen></iframe>
+                        <h3>Video 3</h3>
+                    </div>
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/Btx9KtedHAk?=hd720" frameborder="0" allowfullscreen></iframe>
+                        <h3>Video 4</h3>
+                    </div>
+            </section>
+
     <footer>
         <p>&copy; 2025 My Channel | Follow untuk update terbaru</p>
     </footer>
-    
-    <script>
-        /*Funsgi search*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const searchBar = document.getElementById("searchBar");
-            const searchButton = document.getElementById("searchButton");
-        
-            function searchContent() {
-                const query = searchBar.value.toLowerCase();
-                const items = document.querySelectorAll("h3, p"); // Cari di judul & paragraf
-        
-                let found = false;
-        
-                items.forEach(item => {
-                    if (item.textContent.toLowerCase().includes(query)) {
-                        item.scrollIntoView({ behavior: "smooth", block: "center" });
-                        found = true;
-                    }
-                });
-        
-                if (!found) {
-                    alert("No results found for: " + query);
-                }
-            }
-        
-            searchButton.addEventListener("click", searchContent);
-            searchBar.addEventListener("keypress", function (event) {
-                if (event.key === "Enter") {
-                    searchContent();
-                }
-            });
-        });
 
-        /*Fungsi underline pada teks navbar*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const links = document.querySelectorAll(".nav-link");
-            let currentPage = window.location.pathname.split("/").pop();
-        
-        
-            // Kalau URL gak ada ekstensi .html, tambahin kemungkinan tanpa .html
-            if (!currentPage.includes(".html")) {
-                currentPage += ".html";
-            }
-        
-            links.forEach(link => {
-                if (link.getAttribute("href") === currentPage || link.getAttribute("href") === window.location.pathname) {
-                    link.classList.add("active");
-                }
-            });
-        });
-        
-
-        
-                
-        /*Funsgi dark mode*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const darkModeToggle = document.getElementById("darkModeToggle");
-            const body = document.body;
-        
-            // Mengecek apakah dark mode sebelumnya sudah diaktifkan
-            if (localStorage.getItem("darkMode") === "enabled") {
-                body.classList.add("dark-mode");
-                darkModeToggle.textContent = "☀️";  // Ikon matahari untuk white mode
-            } else {
-                darkModeToggle.textContent = "🌙";  // Ikon bulan untuk dark mode
-            }
-        
-            // Menambahkan event listener untuk toggle dark mode
-            darkModeToggle.addEventListener("click", function () {
-                body.classList.toggle("dark-mode");
-        
-                // Menyimpan status dark mode di localStorage
-                if (body.classList.contains("dark-mode")) {
-                    localStorage.setItem("darkMode", "enabled");
-                    darkModeToggle.textContent = "☀️";  // Ikon matahari untuk white mode
-                } else {
-                    localStorage.setItem("darkMode", "disabled");
-                    darkModeToggle.textContent = "🌙";  // Ikon bulan untuk dark mode
-                }
-            });
-        });
-
-    </script>
-    
-    
+    <script src="tutorial.js"></script>
 </body>
 </html>
