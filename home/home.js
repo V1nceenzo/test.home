@@ -61,3 +61,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // ... (kode sebelumnya tetap sama) ...
+
+    // Active Link Indicator
+    function setActiveLink() {
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('.nav-link, .sidebar-menu a');
+        
+        navLinks.forEach(link => {
+            const linkPath = link.getAttribute('href');
+            if (currentPath === linkPath || currentPath.includes(linkPath)) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    setActiveLink();
+});
