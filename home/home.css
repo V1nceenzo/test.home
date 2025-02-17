@@ -166,9 +166,9 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Auto-fit dengan lebar minimal 250px per kolom */
     gap: 20px;
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    justify-items: center;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -211,9 +211,6 @@ body {
         
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
                 
-        max-width: 1200px;
-
-
 
     }
 
