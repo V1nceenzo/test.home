@@ -199,6 +199,15 @@ body {
     display: block;
 }
 
+
+/* Footer Section */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .navbar-menu {
