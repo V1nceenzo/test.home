@@ -223,16 +223,15 @@ footer {
         align-items: center;
     }
 
-    .navbar-menu {
+    .sidebar-menu {
         position: fixed;
         top: 0;
-        left: -100%; /* Mulai dari luar layar */
-        width: 70%; /* Atur lebar sidebar */
+        left: -250px; /* Mulai di luar layar */
+        width: 250px;
         height: 100%;
-        background: #222; /* Warna latar */
+        background: #222;
         display: flex;
         flex-direction: column;
-        gap: 15px;
         padding-top: 60px;
         transition: left 0.3s ease-in-out;
     }
@@ -266,25 +265,20 @@ footer {
         width: 50%;
     }
 
-    /* Hamburger Menu */
-    .hamburger {
-        display: block; /* Tampilkan hamburger di layar mobile */
-        font-size: 30px;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-    }
-
-    /* Responsif untuk mobile */
-    .navbar-menu {
-        display: none; /* Menyembunyikan navbar menu di mobile */
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .navbar-menu.active {
-        left: 0; /* Muncul dari kiri */
-    }
-    
+        .sidebar-menu a {
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        
+        .sidebar-menu.active {
+            left: 0; /* Muncul ke dalam layar */
+        }
+        
+        /* Hamburger */
+        .hamburger {
+            font-size: 24px;
+            cursor: pointer;
+        }
 }
