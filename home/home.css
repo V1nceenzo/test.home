@@ -205,7 +205,6 @@ body {
     .video-list {
         justify-content: space between; /* Mulai dari kiri */
         align-items: center; 
-        margin-left: 0; /* Hapus margin kiri */
     }
 
     .video-card {
