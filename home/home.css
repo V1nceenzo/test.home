@@ -204,7 +204,7 @@ body {
     }
     
     .video-list {
-        grid-template-columns: repeat(3, 1fr); /* 3 kolom pada desktop */
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Gunakan auto-fit */
     }
     
     .video-card {
