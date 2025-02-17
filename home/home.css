@@ -267,6 +267,275 @@ footer {
             }
 
 /* Tablet Styles (768px - 1024px) */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-y: auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-left: 100px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 200px;
+}
+
+#searchButton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+#hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+/* Active Link */
+.nav-link.active,
+.sidebar-menu a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #4CAF50;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar-menu.active {
+    left: 0;
+}
+
+.sidebar-menu a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar-menu a:hover {
+    background-color: #45a049;
+}
+
+/* Video Section */
+ .video-list {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            white-space: nowrap;
+        }
+
+        .video-card {
+            flex: 0 0 auto;
+            width: 360px;
+            text-align: center;
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: auto;
+            border: none;
+            border-radius: 10px;
+            aspect-ratio: 16 / 9;
+        }
+
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}
+
+
+/* Footer Section */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-left {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar-right {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .search-container {
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    #darkModeToggle, #hamburger {
+        font-size: 24px;
+    }
+
+    .profile {
+        margin-right: 10px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+    
+
+            .video-list {
+                flex-direction: column;
+                overflow-x: hidden;
+            }
+            
+            .video-card {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16/9;
+            }
+
+/* Tablet Styles (768px - 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .navbar {
         flex-direction: row;
@@ -318,5 +587,8 @@ footer {
     }
 
 
+
     
 }
+
+    
