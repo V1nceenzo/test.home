@@ -163,14 +163,13 @@ body {
 /* Video Section */
 .video-list {
     display: grid;
-    grid-auto-flow: column; /* Menyusun item secara horizontal */
-    overflow-x: auto; /* Scroll horizontal jika konten melebihi lebar */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Menyesuaikan lebar dan wrap */
     gap: 20px; /* Jarak antar video */
     padding: 20px; /* Padding untuk ruang di sekitar video */
 }
 
 .video-card {
-    width: 300px; /* Lebar tetap untuk setiap video-card */
+    width: 100%; /* Lebar mengisi ruang yang tersedia */
     height: auto; /* Tinggi menyesuaikan rasio aspek */
 }
 
@@ -200,20 +199,11 @@ body {
     }
     
     .video-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Perbaiki dengan auto-fill */
-        gap: 20px;
-        max-width: 1200px;
-        margin: 0; /* Pusatkan grid */
-        justify-items: center; /* Pusatkan semua item di dalam grid */
-        padding: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Lebar lebih kecil untuk mobile */
     }
 
     .video-card {
-        width: 100%;
-        max-width: 100%; /* Sesuaikan dengan kebutuhan */
-        height: auto;
-        margin: 0;
+        max-width: 100%; /* Lebar penuh pada layar kecil */
     }
 
     .video-card iframe {
@@ -301,19 +291,11 @@ footer {
     }
     
     .video-list {
-        display: flex; /* Menggunakan flexbox untuk pemusatan */
-        flex-wrap: wrap;
-        justify-content: center; /* Memusatkan konten */
-        gap: 40px;
-        margin: 0; /* Menambahkan margin auto */
-        padding: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Lebar lebih kecil untuk mobile */
     }
 
     .video-card {
-        width: 100%;
-        max-width: 100%; /* Sesuaikan dengan kebutuhan */
-        height: auto;
-        margin: 0;
+        max-width: 100%; /* Lebar penuh pada layar kecil */
     }
 
     .video-card iframe {
@@ -386,12 +368,11 @@ footer {
     
 
     .video-list {
-        grid-auto-flow: row; /* Pada layar kecil, susun video secara vertikal */
-        overflow-x: hidden; /* Hilangkan scroll horizontal */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Lebar lebih kecil untuk mobile */
     }
 
     .video-card {
-        width: 100%; /* Lebar penuh pada layar kecil */
+        max-width: 100%; /* Lebar penuh pada layar kecil */
     }
             
 .video-card iframe {
