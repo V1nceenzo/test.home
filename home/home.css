@@ -164,12 +164,13 @@ body {
 /* Video Section */
 .video-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Auto-fit dengan lebar minimal 250px per kolom */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    justify-items: center;
+    justify-content: center;
     padding: 20px;
+    align-items: start; /* Tambahin ini */
 }
 
     
