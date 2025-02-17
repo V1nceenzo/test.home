@@ -204,7 +204,7 @@ body {
     
     .video-list {
         grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); /* Lebar video-card antara 300px dan 350px */
-        justify-content: center; /* Pusatkan video-card */
+        justify-content: start; /* Pusatkan video-card */
     }
 
     .video-card {
