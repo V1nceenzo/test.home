@@ -163,14 +163,17 @@ body {
 /* Video Section */
 .video-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Menyesuaikan lebar dan wrap */
-    max-width: 350px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); /* Lebar video-card antara 300px dan 350px */
     gap: 20px; /* Jarak antar video */
     padding: 20px; /* Padding untuk ruang di sekitar video */
+    max-width: 1200px; /* Batasi lebar maksimum container */
+    margin: 0 auto; /* Pusatkan container */
 }
+
 
 .video-card {
     width: 100%; /* Lebar mengisi ruang yang tersedia */
+    max-width: 350px; /* Batasi lebar maksimum */
     height: auto; /* Tinggi menyesuaikan rasio aspek */
 }
 
@@ -292,11 +295,12 @@ footer {
     }
     
     .video-list {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Lebar lebih kecil untuk mobile */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); /* Lebar video-card antara 300px dan 350px */
+        justify-content: center; /* Pusatkan video-card */
     }
 
     .video-card {
-        max-width: 100%; /* Lebar penuh pada layar kecil */
+        max-width: 350px; /* Batasi lebar maksimum */
     }
 
     .video-card iframe {
