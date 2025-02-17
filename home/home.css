@@ -161,50 +161,25 @@ body {
 }
 
 /* Video Section */
-.video-list {
-    display: flex;
-    gap: 15px;
-    padding: 20px;
-    overflow-x: auto; /* Untuk scroll horizontal di desktop */
-}
+ .video-list {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+        }
 
-.video-card {
-    flex: 0 0 auto;
-    width: 360px;
-    text-align: center;
-}
+        .video-card {
+            flex: 0 0 auto;
+            width: 560px;
+            height: 315px;
+        }
 
-.thumbnail-container {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.video-thumbnail {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.play-icon:hover {
-    background-color: rgba(255, 0, 0, 0.8);
-}
+        .video-card iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
 
 /* Overlay */
 .overlay {
@@ -240,16 +215,16 @@ body {
         width: 150px;
     }
 
-    .video-list {
-        flex-direction: column; /* Tampilan kebawah di mobile */
-        overflow-x: hidden; /* Hilangkan scroll horizontal */
-        align-items: center; /* Pusatkan video-card */
-    }
-
-    .video-card {
-        width: 100%; /* Lebar penuh di mobile */
-        max-width: 360px; /* Batasi lebar maksimal */
-    }
+            .video-list {
+                flex-direction: column;
+                overflow-x: hidden;
+            }
+            
+            .video-card {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16/9;
+            }
 
 
 }
