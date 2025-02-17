@@ -207,7 +207,7 @@ body {
     .video-list {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Perbaiki dengan auto-fill */
-        gap: 20px;
+        gap: 0px;
         max-width: 1200px;
         margin: 0 auto; /* Pusatkan grid */
         justify-items: center; /* Pusatkan semua item di dalam grid */
@@ -307,10 +307,9 @@ footer {
     .video-list {
         display: flex; /* Menggunakan flexbox untuk pemusatan */
         flex-wrap: wrap;
-
-        gap: 20px;
+        justify-content: center; /* Memusatkan konten */
+        gap: 40px;
         margin: 0 auto; /* Menambahkan margin auto */
-        justify-items: center; 
     }
 
     .video-card {
