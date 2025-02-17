@@ -164,7 +164,7 @@ body {
 /* Video Section */
 .video-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-fit dengan lebar minimal 250px per kolom */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Auto-fit dengan lebar minimal 250px per kolom */
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -208,7 +208,7 @@ body {
     }
     
     .video-list {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
     }
 
     .video-card {
@@ -303,7 +303,7 @@ footer {
     }
     
     .video-list {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Lebar minimal sedikit lebih kecil di tablet */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Lebar minimal sedikit lebih kecil di tablet */
     }
 
     .video-card {
@@ -375,7 +375,7 @@ footer {
     
 
     .video-list {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Lebar minimal lebih kecil di mobile */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Lebar minimal lebih kecil di mobile */
     }
 
     .video-card {
