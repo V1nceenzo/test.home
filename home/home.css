@@ -169,6 +169,7 @@ body {
     margin: 0 auto; /* Pusatkan grid */
     justify-items: center; /* Pusatkan semua item di dalam grid */
     padding: 20px;
+    min-height: 100vh; /* Memastikan video menyentuh bagian atas dan bawah layar */
 }
     
 .video-card {
