@@ -297,6 +297,7 @@ footer {
     
     .video-list {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        margin: 0 auto; /* Menambahkan margin auto untuk pusatkan */
     }
 
     .video-card {
