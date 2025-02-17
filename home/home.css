@@ -164,13 +164,14 @@ body {
 /* Video Section */
 .video-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Menyesuaikan ukuran video dengan auto-fill */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-fit dengan lebar minimal 250px per kolom */
     gap: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Pusatkan grid */
-    justify-items: center; /* Pusatkan semua item di dalam grid */
+    margin: 0 auto;
+    justify-items: center;
     padding: 20px;
 }
+
     
 .video-card {
     width: 100%; /* Gunakan lebar penuh dari parent */
@@ -207,12 +208,7 @@ body {
     }
     
     .video-list {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Kolom dinamis */
-        gap: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        justify-items: center;
-        padding: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     }
 
     .video-card {
@@ -307,12 +303,7 @@ footer {
     }
     
     .video-list {
-        display: flex; /* Menggunakan flexbox untuk pemusatan */
-        flex-wrap: wrap;
-        justify-content: center; /* Memusatkan konten */
-        gap: 40px;
-        margin: 0 auto;
-        padding: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Lebar minimal sedikit lebih kecil di tablet */
     }
 
     .video-card {
@@ -384,12 +375,7 @@ footer {
     
 
     .video-list {
-        display: flex; /* Menggunakan flexbox untuk pemusatan */
-        flex-direction: column; /* Atur tampilan vertikal */
-        align-items: center; /* Pusatkan video */
-        gap: 40px;
-        margin: 0 auto; /* Menambahkan margin auto */
-        padding: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Lebar minimal lebih kecil di mobile */
     }
 
     .video-card {
