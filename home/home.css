@@ -212,6 +212,7 @@ body {
         max-width: 1200px;
         margin: 0 auto; /* Pusatkan grid */
         justify-items: center; /* Pusatkan semua item di dalam grid */
+        padding: 20px;
     }
 
     .video-card {
@@ -311,6 +312,7 @@ footer {
         justify-content: center; /* Memusatkan konten */
         gap: 40px;
         margin: 0 auto; /* Menambahkan margin auto */
+        padding: 20px;
     }
 
     .video-card {
@@ -387,6 +389,7 @@ footer {
         align-items: center; /* Pusatkan video */
         gap: 40px;
         margin: 0 auto; /* Menambahkan margin auto */
+        padding: 20px;
     }
 
     .video-card {
