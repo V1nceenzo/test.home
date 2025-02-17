@@ -163,26 +163,25 @@ body {
 /* Video Section */
 .video-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Perbaiki dengan auto-fill */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Menyesuaikan kolom dengan ukuran layar */
     gap: 20px;
-    max-width: 1200px;
+    width: 100%; /* Pastikan lebar grid mengikuti layar */
+    max-width: 100%; /* Tidak membatasi lebar maksimum */
     margin: 0 auto; /* Pusatkan grid */
-    justify-items: center; /* Pusatkan semua item di dalam grid */
-     padding: 0 10vw; /* Memberikan padding kiri dan kanan dengan persentase */
-}
-    
-.video-card {
-    width: 100%; /* Gunakan lebar penuh dari parent */
-    max-width: 350px; /* Batasi lebar maksimum */
-    height: auto; /* Tinggi mengikuti rasio aspek */
-    margin: 0; /* Hapus margin */
+    padding: 0 10vw; /* Memberikan padding kiri dan kanan dengan persentase */
 }
 
+/* Video Card */
+.video-card {
+    width: 100%; /* Gunakan lebar penuh dari parent */
+    height: auto; /* Menjaga proporsi gambar/video */
+    max-width: 100%; /* Pastikan tidak melebihi lebar parent */
+}
 
 .video-card iframe {
     width: 100%;
     height: auto;
-    max-width: 100%; /* Pastikan iframe tidak melebihi lebar parent */
+    max-width: 100%;
     border: none;
     border-radius: 10px;
     aspect-ratio: 16 / 9;
