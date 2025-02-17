@@ -163,10 +163,9 @@ body {
 /* Video Section */
 .video-list {
     display: flex;
-    overflow-x: auto;
     gap: 15px;
     padding: 20px;
-    white-space: nowrap; /* Tambahkan ini */
+    overflow-x: auto; /* Untuk scroll horizontal di desktop */
 }
 
 .video-card {
@@ -215,5 +214,19 @@ body {
 
     .search-bar {
         width: 150px;
+    }
+
+
+
+    @media screen and (max-width: 768px) {
+    .video-list {
+        flex-direction: column; /* Tampilan kebawah di mobile */
+        overflow-x: hidden; /* Hilangkan scroll horizontal */
+        align-items: center; /* Pusatkan video-card */
+    }
+
+    .video-card {
+        width: 100%; /* Lebar penuh di mobile */
+        max-width: 360px; /* Batasi lebar maksimal */
     }
 }
