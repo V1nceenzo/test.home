@@ -165,7 +165,7 @@ body {
 .video-list {
 
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Auto-fit dengan lebar minimal 250px per kolom */
-    gap: 20px;
+
 
     padding: 20px;
     
