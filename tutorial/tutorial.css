@@ -1,3 +1,4 @@
+
 /* Reset CSS */
 * {
     margin: 0;
@@ -24,14 +25,12 @@ body {
     background-color: #4CAF50;
 }
 
-/* Kiri: Profile & Menu */
 .navbar-left {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-/* Profile */
 .profile {
     display: flex;
     align-items: center;
@@ -50,7 +49,6 @@ body {
     font-weight: bold;
 }
 
-/* Menu Navbar */
 .navbar-menu {
     display: flex;
     list-style: none;
@@ -75,17 +73,16 @@ body {
     color: #ffcc00;
 }
 
-/* Kanan: Search Bar & Dark Mode */
 .navbar-right {
     display: flex;
     align-items: center;
-    gap: 50px; /* Memberikan jarak antara container search dan dark mode */
+    gap: 50px;
 }
 
 .search-container {
     display: flex;
-    align-items: center; /* Membuat search bar dan icon search tetap berdekatan */
-    gap: 5px; /* Memberikan jarak antara search bar dan icon search */
+    align-items: center;
+    gap: 5px;
 }
 
 .search-bar {
@@ -104,7 +101,6 @@ body {
     margin-left: 5px;
 }
 
-/* Dark Mode */
 #darkModeToggle {
     background: none;
     border: none;
@@ -114,31 +110,146 @@ body {
     margin-left: 10px;
 }
 
+#hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
 .dark-mode {
     background-color: #222;
     color: white;
 }
 
-/* Video Section */
-.video-list {
-    display: flex;
-    overflow-x: auto;
-    gap: 15px;
-    padding: 20px;
-    white-space: nowrap;
+/* Active Link */
+.nav-link.active,
+.sidebar-menu a.active {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
-.video-card {
-    flex: 0 0 auto;
-    width: 360px;
-    text-align: center;
+/* Sidebar */
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #4CAF50;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1000;
 }
+
+.sidebar-menu.active {
+    left: 0;
+}
+
+.sidebar-menu a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar-menu a:hover {
+    background-color: #45a049;
+}
+
+/* Video Section */
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Perbaiki dengan auto-fill */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Pusatkan grid */
+    justify-items: center; /* Pusatkan semua item di dalam grid */
+    padding: 20px;
+}
+    
+.video-card {
+    width: 100%; /* Gunakan lebar penuh dari parent */
+    max-width: 350px; /* Batasi lebar maksimum */
+    height: auto; /* Tinggi mengikuti rasio aspek */
+    margin: 0; /* Hapus margin */
+}
+
 
 .video-card iframe {
     width: 100%;
     height: auto;
+    max-width: 100%; /* Pastikan iframe tidak melebihi lebar parent */
+    border: none;
+    border-radius: 10px;
     aspect-ratio: 16 / 9;
 }
+
+
+/* Desktop Styles (1025px ke atas) */
+@media screen and (min-width: 1025px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .navbar-menu {
+        display: flex !important;
+    }
+    
+    #hamburger {
+        display: none !important;
+    }
+    
+    .video-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Perbaiki dengan auto-fill */
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto; /* Pusatkan grid */
+        justify-items: center; /* Pusatkan semua item di dalam grid */
+        padding: 20px;
+    }
+
+    .video-card {
+        width: 100%;
+        max-width: 350px; /* Batasi lebar maksimum */
+        height: auto;
+        margin: 0;
+    }
+
+    .video-card iframe {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border: none;
+        border-radius: 10px;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}
+
 
 /* Footer Section */
 footer {
@@ -148,109 +259,153 @@ footer {
     color: white;
 }
 
+
+
+/* Tablet Styles (768px - 1024px) */
 @media screen and (max-width: 1024px) {
-    /* Navbar */
     .navbar {
         flex-direction: column;
-        align-items: center;
-        padding: 10px 15px;
+        align-items: flex-start;
+        padding: 10px;
     }
 
     .navbar-left {
-        flex-direction: column;
-        gap: 10px;
-        margin-left: 0;
+        width: 100%;
+        justify-content: space-between;
         align-items: center;
-    }
-
-    .navbar-menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-left: 0;
-        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .navbar-right {
-        display: flex;
-        justify-content: center; /* Memastikan elemen tetap di tengah */
-        gap: 10px; /* Memberikan jarak antar elemen */
-        margin-top: 10px;
-        flex-wrap: nowrap; /* Pastikan elemen tidak turun ke bawah */
-        width: 100%; /* Lebar penuh */
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
     }
 
-    /* Membuat tombol darkmode dan search bar lebih responsif */
-    #darkModeToggle, #searchButton {
-        font-size: 28px;
+    .search-container {
+        flex-grow: 1;
+        margin-right: 10px;
     }
 
     .search-bar {
-        width: 80%;
-        font-size: 14px;
+        width: 100%;
     }
 
-    /* Video Section */
+    #darkModeToggle, #hamburger {
+        font-size: 24px;
+    }
+
+    .profile {
+        margin-right: 10px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+    
     .video-list {
-        flex-direction: column;
-        align-items: center;
-        overflow-x: hidden;
+        display: flex; /* Menggunakan flexbox untuk pemusatan */
+        flex-wrap: wrap;
+        justify-content: center; /* Memusatkan konten */
+        gap: 40px;
+        margin: 0 auto; /* Menambahkan margin auto */
+        padding: 20px;
     }
 
     .video-card {
-        width: 90%;
-        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        max-width: 350px; /* Batasi lebar maksimum */
+        margin: 0; /* Menghapus margin */
+    }
+
+    .video-card iframe {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border: none;
+        border-radius: 10px;
+        aspect-ratio: 16 / 9;
     }
 }
 
+
+
+
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
-    /* Navbar */
     .navbar {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding: 10px;
     }
 
     .navbar-left {
-        flex-direction: column;
-        gap: 10px;
-        margin-left: 0;
+        width: 100%;
+        justify-content: space-between;
         align-items: center;
-    }
-
-    .navbar-menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-left: 0;
-        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .navbar-right {
-        display: flex;
-        justify-content: center; /* Menyusun elemen di tengah */
-        gap: 10px; /* Memberikan spasi antar elemen */
-        margin-top: 10px;
-        flex-wrap: nowrap; /* Pastikan elemen tetap dalam satu baris */
-        width: 100%; /* Lebar penuh */
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .search-container {
+        flex-grow: 1;
+        margin-right: 10px;
     }
 
     .search-bar {
-        width: 70%; /* Membuat search bar lebih lebar untuk tampilan mobile */
-        font-size: 14px; /* Mengurangi ukuran font */
+        width: 100%;
     }
 
-    #searchButton, #darkModeToggle {
-        font-size: 24px; /* Menyesuaikan ukuran tombol */
+    #darkModeToggle, #hamburger {
+        font-size: 24px;
     }
 
-    /* Video Section */
+    .profile {
+        margin-right: 10px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+    
+
     .video-list {
-        flex-direction: column;
-        align-items: center;
-        overflow-x: hidden;
+        display: flex; /* Menggunakan flexbox untuk pemusatan */
+        flex-direction: column; /* Atur tampilan vertikal */
+        align-items: center; /* Pusatkan video */
+        gap: 40px;
+        margin: 0 auto; /* Menambahkan margin auto */
+        padding: 20px;
     }
 
     .video-card {
-        width: 90%;
+        width: 100%;
+        max-width: 350px; /* Lebar maksimum sedikit lebih besar untuk mobile */
     }
+            
+.video-card iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 10px;
+    aspect-ratio: 16 / 9;
+}
+
+    
 }
