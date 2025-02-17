@@ -165,7 +165,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Kolom akan menyesuaikan dengan lebar container */
     gap: 20px; /* Jarak antar video */
-    justify-content: start; /* Menyusun video-card dari kiri */
+    justify-items: start; /* Menyusun video-card dari kiri pada layar kecil */
 }
 
 
