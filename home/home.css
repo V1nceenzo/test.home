@@ -166,8 +166,6 @@ body {
 
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Auto-fit dengan lebar minimal 250px per kolom */
 
-
-    padding: 20px;
     
 }
 
