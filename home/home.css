@@ -210,7 +210,8 @@ body {
     .video-list {
         
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-        display: grid;
+                
+        max-width: 1200px;
 
 
 
