@@ -170,8 +170,7 @@ body {
 
         .video-card {
             flex: 0 0 auto;
-            width: 560px;
-            height: 315px;
+            width: 360px;
         }
 
         .video-card iframe {
