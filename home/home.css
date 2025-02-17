@@ -216,9 +216,6 @@ body {
         width: 150px;
     }
 
-
-
-    @media screen and (max-width: 768px) {
     .video-list {
         flex-direction: column; /* Tampilan kebawah di mobile */
         overflow-x: hidden; /* Hilangkan scroll horizontal */
@@ -229,4 +226,6 @@ body {
         width: 100%; /* Lebar penuh di mobile */
         max-width: 360px; /* Batasi lebar maksimal */
     }
+
+
 }
