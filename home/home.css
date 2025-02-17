@@ -203,12 +203,18 @@ body {
     }
     
     .video-list {
+        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto; /* Pusatkan grid */
     }
 
     .video-card {
-        width: 100%; /* Gunakan lebar penuh */
+        width: 100%;
         max-width: 350px; /* Batasi lebar maksimum */
+        height: auto;
+        margin: 0;
     }
 
     .video-card iframe {
